@@ -1,0 +1,58 @@
+---
+layout: default
+title: Test blogpost
+summary: A nice summary for the test blogpost
+description: test
+keywords: test
+---
+
+<header>
+	<h1>A mobile development strategy for awesome web-developers</h1>
+</header>
+
+<aside class="intro">
+	<p>This article lays out a strategy that I think would work for a mobile website.</p>
+</aside>
+
+<aside class="metadata">
+	<p>by <em>Tim Benniks</em></p>
+</aside>
+
+<article>
+	<p>If you build a mobile website, you could re-use the templates that are used for the regular website and just change the CSS. So, downscale images, downscale the grid, hide certain assets, and maybe put the menu on the top of the page.</p>
+	<p>I used the <a href="#" title="tricks">tricks above</a> on my own website and wrote about them here. I used media queries and a fluid grid to make my website accessible to all the devices I liked. Developing in this particular way is fine for websites that do not have a specific mobile concept. It just makes them easier to navigate on an iPad or HTC phone. But you should not do this for a project that has it’s main focus on mobile.</p>
+	
+	<h2>I am an awesome header to separate content with</h2>
+	<p>If you are developing a specific website or app for a mobile device, there are some considerations to keep in mind. Remember that you usually have a strict policy on Internet use and that you only have a 3G or GPRS connection. Even if you hide the slide show or the background images, the browser will still download them. The same goes for resizing images with CSS. You uploaded a big image for your desktop users, but you scale it down for mobile users. It turns out that the mobile browser actually downloads the big image and then scales it down.</p>
+	
+	<ul>
+		<li>point one is awesome</li>
+		<li>point two is a little more awesome</li>
+		<li>point three is as awesome as awesome can get</li>
+	</ul>
+
+	<p>For me this is a total “no-go”. Why load stuff you can’t even see or scale down? It just slows down the experience and drives up your Internet costs.</p>
+	
+	<blockquote>
+		A nice blockquote is nice&hellip; It's not long enough isn't it? Let's make it longer!
+	</blockquote>
+	
+	<p>Some companies advertise that they allow flash to work on their device. That sounds promising, but I have not seen any workable and performing sites yet. The flash drivers on those devices are not optimized for a mobile and slow down or crash the browser. A definite “no-go” again.</p>
+	
+	<h3>Context baby!</h3>
+	
+	<p>When you develop for mobile, in what context users view your site is very important. On a mobile you are usually more hands-on and more goal-focused. Imagine running for the train and you forgot from what lane your train is departing. You grab your mobile, squeeze your bagel somewhere and browse to the train company website to check the departures. How frustrated would you be if you had to browse through 5 pages and scroll along media players that show the company’s history and such? You just want to get to these departure lanes...</p>
+	
+	<figure>
+		<img src="http://placekitten.com/g/508/300" />
+		<figcaption>This is a very sweet little kitten! What a nice figcaption. HMTL5 ftw.</figcaption>
+	</figure>
+	
+	<p>I propose a set of simple templates that already know that the website is being viewed on some sort of mobile / touch device. In this template you can leave out all the fancy slide shows and high-res images. Instead, just focus on the most important information.</p>
+	<p>I personally think that if you design a website, you should start with the mobile version. It let’s you and your client focus on the most important piece of information on the entire website. After that, scale up and design the fancy stuff. If you organize your process this way, hopefully all your team members get a sort of group conscience that you are working on a design that has to be very adaptable to the users context. Everything should be flexible and fast. It’s the wobbly web people, not a magazine... Nothing is fixed anymore, not even pixels (check the iPhone 4 screen).</p>
+</article>
+
+<nav class="pager">
+		<a href="#" title="Previous article">&laquo; Previous</a>
+		<a href="#" title="Next article">Next &raquo;</a>
+	</nav>

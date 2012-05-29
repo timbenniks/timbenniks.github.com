@@ -5,7 +5,7 @@
 <!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class="no-js"><!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>Hi, I'm Tim and I create websites.</title>
+	<title>blog</title>
 	
 	<meta name="description" content="I am a web-developer with a passion for fancy web-stuff and I'm in love with typography." />
 	<meta name="keywords" content="Tim Benniks, Tim, Benniks, Front-end, Engineer, CSS, Javascript, Zotonic, atatonic, jquery, interface, designer, html5, css3, front-end development, Progressive enhancement, adaptive design" />
@@ -26,7 +26,7 @@
 	<meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=1,minimum-scale=1,maximum-scale=1" />
 		
-	<meta property="og:title" content="Hi, I'm Tim and I create websites." />
+	<meta property="og:title" content="blog" />
 	<meta property="og:image" content="" />
 	<meta property="og:site_name" content="Tim Benniks" />
 	<meta property="og:description" content="I am a web-developer with a passion for fancy web-stuff and I'm in love with typography." />
@@ -36,7 +36,7 @@
 	
 	<script src="/static/js/modernizr.js"></script>
 </head>
-<body class="home-page">
+<body class="blog">
 
 <nav>
 	<h1>TIM BENNIKS</h1>
@@ -45,7 +45,7 @@
 	
 		<a  href="/work.html" title="work">work</a>
 	
-		<a  href="/blog.html" title="blog">blog</a>
+		<a class="current" href="/blog.html" title="blog">blog</a>
 	
 		<a  href="/about.html" title="about me">about me</a>
 	
@@ -53,17 +53,19 @@
 
 <section class="content">
 
-<header>
-	<h1>Hi, I'm Tim and I create websites.</h1>
-	<h2>I am a web-developer with a passion for fancy web-stuff and I'm in love with typography.</h2>
-</header>
-<nav>
-	<a href="work.html">Work</a>
-	<a href="blog-list.html">Blog</a>
-	<a href="about.html">About Me</a>
-</nav>
-
-<p>&diams;</p>
+<div class="list">
+	
+		<section class="list-item blogpost">
+			<header>
+				<h1>Test blogpost</h1>
+			</header>
+			<aside class="intro">
+				<p>29 May 2012</p>
+				<p>A nice summary for the test blogpost <a href="/2012/05/29/test-blog-post.html">Read more &raquo;</a></p>
+			</aside>
+		</section>
+	
+</div>
 
 </section>
 </body>

@@ -1,0 +1,21 @@
+---
+layout: default
+title: blog
+description: I am a web-developer with a passion for fancy web-stuff and I'm in love with typography.
+keywords: Tim Benniks, Tim, Benniks, Front-end, Engineer, CSS, Javascript, Zotonic, atatonic, jquery, interface, designer, html5, css3, front-end development, Progressive enhancement, adaptive design
+classname: blog
+---
+
+<div class="list">
+	{% for post in site.posts %}
+		<section class="list-item blogpost">
+			<header>
+				<h1>{{ post.title }}</h1>
+			</header>
+			<aside class="intro">
+				<p>{{ post.date | date_to_string }}</p>
+				<p>{{ post.summary }} <a href="{{ post.url }}">Read more &raquo;</a></p>
+			</aside>
+		</section>
+	{% endfor %}
+</div>
