@@ -1,14 +1,14 @@
-﻿<!doctype html>
+<!doctype html>
 <!--[if IE 7 ]><html lang="en" class="ie7 ie no-js"><![endif]-->
 <!--[if IE 8 ]><html lang="en" class="ie8 ie no-js"><![endif]-->
 <!--[if IE 9 ]><html lang="en" class="ie9 ie no-js"><![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class="no-js"><!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>Tim Benniks</title>
+	<title>{{ page.title }}</title>
 	
-	<meta name="description" content="I am a web-developer with a passion for fancy web-stuff and I'm in love with typography." />
-	<meta name="keywords" content="Tim Benniks, Tim, Benniks, Front-end, Engineer, CSS, Javascript, Zotonic, atatonic, jquery, interface, designer, html5, css3, front-end development, Progressive enhancement, adaptive design" />
+	<meta name="description" content="{{ page.description }}" />
+	<meta name="keywords" content="{{ page.keywords }}" />
 	
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta http-equiv="cleartype" content="on" />
@@ -26,45 +26,18 @@
 	<meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=1,minimum-scale=1,maximum-scale=1" />
 		
-	<meta property="og:title" content="Tim Benniks" />
-	<meta property="og:image" content="" />
+	<meta property="og:title" content="{{ page.title }}" />
+	<meta property="og:image" content="{{ page.image }}" />
 	<meta property="og:site_name" content="Tim Benniks" />
-	<meta property="og:description" content="I am a web-developer with a passion for fancy web-stuff and I'm in love with typography." />
+	<meta property="og:description" content="{{ page.description }}" />
 
 	<link href="/static/css/normalise.css" rel="stylesheet" />
 	<link href="/static/css/style.css" rel="stylesheet" />
 	
 	<script src="/static/js/modernizr.js"></script>
 </head>
-<body class="home-page">
+<body class="{{ page.classname }}">
 
-<nav>
-	<h1>TIM BENNIKS</h1>
-	
-		<a  href="/" title="Home">Home</a>
-	
-		<a  href="/work.html" title="work">work</a>
-	
-		<a  href="/blog.html" title="blog">blog</a>
-	
-		<a  href="/about.html" title="about me">about me</a>
-	
-</nav>
+{% include nav.html %}
 
 <section class="content">
-
-<header>
-	<h1>Hi, I'm Tim and I create websites.</h1>
-	<h2>I am a web-developer with a passion for fancy web-stuff and I'm in love with typography.</h2>
-</header>
-<nav>
-	<a href="work.html">Work</a>
-	<a href="blog-list.html">Blog</a>
-	<a href="about.html">About Me</a>
-</nav>
-
-<p>&diams;</p>
-
-</section>
-</body>
-</html>
