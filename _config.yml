@@ -44,8 +44,8 @@ navigation:
 - text: Home
   url: /
 - text: work
-  url: /work
+  url: /work/
 - text: blog
-  url: /blog
+  url: /blog/
 - text: about me
-  url: /about
+  url: /about/
