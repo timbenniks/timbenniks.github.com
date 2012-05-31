@@ -43,8 +43,8 @@ kramdown:
 navigation:
 - text: Home
   url: /
-- text: /work/
-  url: work
+- text: work
+  url: /work/
 - text: blog
   url: /blog/
 - text: about me

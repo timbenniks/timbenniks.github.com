@@ -1,0 +1,36 @@
+{% include header.html %}
+
+<header>
+	<h1>{{ page.title }}</h1>
+	
+	{% if page.sub_title != null %}
+		<h2>{{ page.sub_title }}
+	{% endif %}
+</header>
+
+{% if page.description != null %}
+<aside class="intro">
+	<p>{{ page.description }}</p>
+</aside>
+{% endif %}
+
+{% if page.metadata != null %}
+	<aside class="metadata">
+		{% for meta in page.metadata %}
+			<p>{{ meta.role }} <em> {% if meta.url != null %}<a href="{{ meta.url }}">{{ meta.name }}</a> {% else %} {{ meta.name }} {% endif %}</em></p>
+		{% endfor %}
+	</aside>
+{% endif %}
+
+{% if page.kind == 'blog' %}
+	<article>
+		{{ content }}
+	</article>
+{% endif %}
+
+<nav class="pager">
+	<a href="#" title="Previous article">&laquo; Previous</a>
+	<a href="#" title="Next article">Next &raquo;</a>
+</nav>
+
+{% include footer.html %}

@@ -15,7 +15,7 @@ nav_url: /blog/
 					<h1>{{ post.title }}</h1>
 				</header>
 				<aside class="intro">
-					<p>{{ post.date | date_to_string }} &mdash; {{ post.summary | replace: '.','' | truncatewords: 10}} <a href="{{ post.url }}"><em>Read more &raquo;</em></a></p>
+					<p>{{ post.date | date_to_string }} &mdash; {{ post.description | replace: '.','' | truncatewords: 10}} <a href="{{ post.url }}"><em>Read more &raquo;</em></a></p>
 				</aside>
 			</section>		
 		{% endif %}
