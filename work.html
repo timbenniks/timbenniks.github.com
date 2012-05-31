@@ -10,17 +10,18 @@ classname: work
 	<h1>A selection of my work</h1>
 </header>
 
-<div class="list">
-	<section class="list-item work">
-		<img src="http://placekitten.com/320/200" alt="" />
-		<h2>BigAirBag</h2>
-		<p>The BigAirBag is the common professional safety product in the freestyle parks around the world.</p>
-		<p>The project has been a collaboration with my Mates Mark and Pieter Frank. These guys did an awesome job with the back-end and the design. I have taken care of the front-end.<p>
-	</section>
 
-	<section class="list-item work">
-		<img src="http://placekitten.com/320/200" alt="" />
-		<h2>Thomas Vording Photography</h2>
-		<p>Thomas is an up and coming fashion photographer from Amsterdam. This guy has some mad skills and it was hard to say no to building his portfolio.</p>
-	</section>
+<div class="list">
+	{% for post in site.posts %}
+		{% if post.kind != 'blog' %}
+			<section class="list-item blogpost">
+				<header>
+					<h1>{{ post.title }}</h1>
+				</header>
+				<aside class="intro">
+					<p>{{ post.date | date_to_string }} &mdash; {{ post.summary | replace: '.','' | truncatewords: 10}} <a href="{{ post.url }}"><em>Read more &raquo;</em></a></p>
+				</aside>
+			</section>		
+		{% endif %}
+	{% endfor %}
 </div>

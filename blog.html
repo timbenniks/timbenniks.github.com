@@ -8,13 +8,15 @@ classname: blog
 
 <div class="list">
 	{% for post in site.posts %}
-		<section class="list-item blogpost">
-			<header>
-				<h1>{{ post.title }}</h1>
-			</header>
-			<aside class="intro">
-				<p>{{ post.date | date_to_string }} &mdash; {{ post.summary | replace: '.','' | truncatewords: 10}} <a href="{{ post.url }}"><em>Read more &raquo;</em></a></p>
-			</aside>
-		</section>
+		{% if post.kind != 'work' %}
+			<section class="list-item blogpost">
+				<header>
+					<h1>{{ post.title }}</h1>
+				</header>
+				<aside class="intro">
+					<p>{{ post.date | date_to_string }} &mdash; {{ post.summary | replace: '.','' | truncatewords: 10}} <a href="{{ post.url }}"><em>Read more &raquo;</em></a></p>
+				</aside>
+			</section>		
+		{% endif %}
 	{% endfor %}
 </div>
