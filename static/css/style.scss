@@ -271,15 +271,23 @@ nav {
 	
 	.list {
 		margin: 0;
-	}
-	
-	.list-item {
+		border: none;
+		padding: 0;
+		background: none;
 		
-		img {
-			float: left;
-			border: 1px solid #ddd;
-			padding: 5px;
-			margin: 5px 25px 0 0;
+		.work-item {
+			display: block;
+			width: 270px;
+			margin: 0 auto 10px;
+			
+			img {
+				width: 100%;
+				height: auto;
+				border: 1px solid #ddd;
+				padding: 5px;
+				background: #fff;
+				display: block;
+			}
 		}
 	}
 }
@@ -368,6 +376,41 @@ nav {
 	
 	blockquote {
 	    margin: 5px 0 25px -50px;
+	}
+	
+	.work {
+		header {
+			margin: 0 0 25px 0;
+			padding: 0;
+			border: none;
+			
+			h1 {
+				text-align: center;
+			}
+		}
+		
+		.list {
+			background: #F8F8F8;
+			border-top: 1px dotted #ddd;
+			padding: 25px 0 0 0;
+			margin: 50px 0 0 0;
+			text-align: center;
+	
+			.work-item {
+				display: inline-block;
+				width: 320px;
+				margin: 0 20px 10px 0;
+				
+				img {
+					width: 100%;
+					height: auto;
+					border: 1px solid #ddd;
+					padding: 5px;
+					background: #fff;
+					display: block;
+				}
+			}
+		}
 	}
 }
 

@@ -14,14 +14,16 @@ classname: work
 <div class="list">
 	{% for post in site.posts %}
 		{% if post.kind != 'blog' %}
-			<section class="list-item blogpost">
-				<header>
-					<h1>{{ post.title }}</h1>
-				</header>
-				<aside class="intro">
-					<p>{{ post.date | date_to_string }} &mdash; {{ post.summary | replace: '.','' | truncatewords: 10}} <a href="{{ post.url }}"><em>Read more &raquo;</em></a></p>
-				</aside>
-			</section>		
+			<section class="work-item">
+				<a href="{{ post.url}}"><img src="{{ post.cover_image }}" /></a>
+			</section>
+		{% endif %}
+	{% endfor %}
+	{% for post in site.posts %}
+		{% if post.kind != 'blog' %}
+			<section class="work-item">
+				<a href="{{ post.url}}"><img src="{{ post.cover_image }}" /></a>
+			</section>
 		{% endif %}
 	{% endfor %}
 </div>
