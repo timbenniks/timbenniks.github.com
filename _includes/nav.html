@@ -1,6 +1,6 @@
 <nav>
 	<h1>TIM BENNIKS</h1>
 	{% for p in site.navigation %}
-		<a {% if p.url == page.url %}class="current"{% endif %} href="{{ p.url }}" title="{{ p.text }}">{{ p.text }}</a>
+		<a {% if page.nav_url == p.url %}class="current"{% endif %} href="{{ p.url }}" title="{{ p.text }}">{{ p.text }}</a>
 	{% endfor %}
 </nav>

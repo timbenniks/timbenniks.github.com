@@ -4,6 +4,7 @@ title: A selection of my work
 description: I am a web-developer with a passion for fancy web-stuff and I'm in love with typography.
 keywords: web-developer, CSS, Javascript, Progressive enhancement, adaptive design
 classname: work
+nav_url: /work/
 ---
 
 <header>
@@ -12,13 +13,6 @@ classname: work
 
 
 <div class="list">
-	{% for post in site.posts %}
-		{% if post.kind != 'blog' %}
-			<section class="work-item">
-				<a href="{{ post.url}}"><img src="{{ post.cover_image }}" /></a>
-			</section>
-		{% endif %}
-	{% endfor %}
 	{% for post in site.posts %}
 		{% if post.kind != 'blog' %}
 			<section class="work-item">
