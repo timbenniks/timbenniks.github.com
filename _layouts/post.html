@@ -22,11 +22,15 @@
 	</aside>
 {% endif %}
 
-{% if page.kind == 'blog' %}
-	<article>
-		{{ content }}
-	</article>
+{% if.page.work_url != null %}
+	<aside class="visit">
+		<nav><a href="{{ page.work_url }}" target="_blank">visit site</a></nav>
+	</aside>
 {% endif %}
+
+<article>
+	{{ content }}
+</article>
 
 <nav class="pager">
 	<a href="#" title="Previous article">&laquo; Previous</a>
