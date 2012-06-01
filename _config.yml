@@ -11,9 +11,10 @@ plugins:     ./_plugins
 
 future:      true
 lsi:         false
-pygments:    false
+pygments:    true
 markdown:    maruku
 permalink:   pretty
+paginate:   3
 
 maruku:
   use_tex:    false

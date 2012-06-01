@@ -2,6 +2,7 @@
 layout: nill
 ---
 
+@import "_highlighting";
 @import "_normalize";
 
 @font-face {
@@ -212,9 +213,12 @@ nav {
 		
 		a {
 			display: block;
-			float: left;
-				
-			&:last-child {
+			
+			&.previous {
+				float: left;
+			}
+			
+			&.next {
 				float: right;
 			}
 		}
@@ -420,6 +424,10 @@ nav {
 				}
 			}
 		}
+	}
+	
+	.highlight { 
+		width: 100%;
 	}
 }
 

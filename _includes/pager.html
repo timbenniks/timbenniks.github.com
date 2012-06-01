@@ -1,0 +1,13 @@
+<nav class="pager">
+	{% if page.previous.url %} 
+		
+		<a href="{{ page.previous.url }}" title="{{ page.previous.title }}" class="previous">&laquo; previous</a>
+
+	{% endif %}
+
+	{% if page.next.url %} 
+		
+		<a href="{{page.next.url}}" title="{{page.next.title}}" class="next">Next &raquo;</a>
+
+	{% endif %}
+</nav>
