@@ -394,8 +394,8 @@ nav {
 	.work {
 		header {
 			margin: 0 0 25px 0;
-			padding: 0 0 24px 0;
-			border-bottom: 1px dotted #ddd;
+			padding: 0;
+			border: none;
 			
 			h1 {
 				text-align: center;
@@ -425,7 +425,7 @@ nav {
 			margin: 0;
 			
 			figure img {
-				max-width: 768px;
+				max-width: 727px;
 				width: 100%;
 				height: auto;
 			}
