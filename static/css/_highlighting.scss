@@ -1,6 +1,6 @@
 .highlight { 
 	background: #F8F8F8; 
-	border-bottom: 1px dotted #ddd;
+	border: 1px solid #ddd;
 	font-size: 1.1em;
 	margin: 0 auto 25px;
 	width: 100%;
@@ -9,6 +9,7 @@
 	
 	pre, code {
 		font-family: monaco, courier, "courier new", monospace;
+		padding: 5px;
 	}
 	
 	.hll 	{ background-color: #F8F8F8; border-bottom: 1px dotted #ddd; }

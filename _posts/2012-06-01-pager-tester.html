@@ -14,20 +14,29 @@ metadata:
 <p>If you build a mobile website, you could re-use the templates that are used for the regular website and just change the CSS. So, downscale images, downscale the grid, hide certain assets, and maybe put the menu on the top of the page.</p>
 <p>I used the <a href="#" title="tricks">tricks above</a> on my own website and wrote about them here. I used media queries and a fluid grid to make my website accessible to all the devices I liked. Developing in this particular way is fine for websites that do not have a specific mobile concept. It just makes them easier to navigate on an iPad or HTC phone. But you should not do this for a project that has it’s main focus on mobile.</p>
 
-{% highlight php %}
+{% highlight js %}
 
-<?php 
-	class Blog_Controller extends Controller { 
-		public function __construct() { 
-			parent::__construct(); 
-			// Ohter codes 
-		} 
-		
-		function index() { 
-			echo 'Hello World!'; 
-		} 
-	} 
-?>
+function loadScript(url, callback) {
+	var scriptTag = document.createElement("script");
+
+	// check for IE
+	if(scriptTag.readyState) {
+		scriptTag.onreadystatechange = function() {
+			if(scriptTag.readyState == "loaded" 
+			|| scriptTag.readyState == "complete") {
+				scriptTag.onreadystatechange = null;
+				callback();
+			}
+		}	
+	} else {
+		scriptTag.onLoad = function() {
+			callback();
+		}
+	}
+	
+	scriptTag.src = url;
+	document.getElementsByTagName("head")[0].appendChild(scriptTag);	
+}
 
 {% endhighlight %}
 

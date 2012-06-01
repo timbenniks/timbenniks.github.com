@@ -394,11 +394,40 @@ nav {
 	.work {
 		header {
 			margin: 0 0 25px 0;
-			padding: 0;
-			border: none;
+			padding: 0 0 24px 0;
+			border-bottom: 1px dotted #ddd;
 			
 			h1 {
 				text-align: center;
+			}
+		}
+		
+		aside {
+			display: block;
+			width: 100%;
+			float: none;
+			
+			p {
+				text-align: center;
+			}
+			
+			&.intro {
+				margin: 0 0 25px 0;
+			}
+			
+			&.visit nav {
+				text-align: center;
+			}
+		}
+		
+		article {
+			float: none;
+			margin: 0;
+			
+			figure img {
+				max-width: 768px;
+				width: 100%;
+				height: auto;
 			}
 		}
 		
