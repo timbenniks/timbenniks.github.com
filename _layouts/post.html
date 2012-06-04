@@ -15,9 +15,9 @@
 {% endif %}
 
 {% if page.metadata != null %}
-	<aside class="metadata author vcard">
+	<aside class="metadata">
 		{% for meta in page.metadata %}
-			<p>{{ meta.role }} <em class="fn">{% if meta.url != null %}<a href="{{ meta.url }}">{{ meta.name }}</a> {% else %} {{ meta.name }} {% endif %}</em></p>
+			<p class="author vcard">{{ meta.role }} <em class="fn">{% if meta.url != null %}<a href="{{ meta.url }}">{{ meta.name }}</a> {% else %} {{ meta.name }} {% endif %}</em></p>
 		{% endfor %}
 	</aside>
 {% endif %}
