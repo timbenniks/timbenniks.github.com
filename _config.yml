@@ -1,20 +1,22 @@
-safe:        false
-auto:        true
-server:      false
-server_port: 4000
-baseurl:    /
-url: http://localhost:4000
+safe:        	false
+auto:       	true
+server:      	false
+server_port: 	4000
+baseurl:    	/
 
-source:      .
-destination: ./_site
-plugins:     ./_plugins
+url: 			http://localhost:4000
+live_url: 		http://timbenniks.nl
 
-future:      true
-lsi:         false
-pygments:    true
-markdown:    maruku
-permalink:   pretty
-paginate:   3
+source:      	.
+destination: 	./_site
+plugins:     	./_plugins
+
+future:      	true
+lsi:         	false
+pygments:    	true
+markdown:    	maruku
+permalink:   	pretty
+paginate:  		3
 
 maruku:
   use_tex:    false

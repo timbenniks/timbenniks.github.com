@@ -11,7 +11,6 @@
 	<meta name="keywords" content="{{ page.keywords }}" />
 	
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta http-equiv="cleartype" content="on" />
 	
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -26,16 +25,14 @@
 	<meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=1,minimum-scale=1,maximum-scale=1" />
 		
-	<link href="{{ site.baseurl }}feed.xml" rel="alternate" title="RSS 2.0" type="application/rss+xml">	
+	<link href="{{ site.baseurl }}feed.xml" rel="alternate" title="Feed" type="application/atom+xml">	
 		
 	<meta property="og:title" content="{{ page.title }}" />
-	<meta property="og:image" content="http://2012.timbenniks.nl/static/gfx/favicon.png" />
+	<meta property="og:image" content="/static/gfx/favicon.png" />
 	<meta property="og:site_name" content="Tim Benniks" />
 	<meta property="og:description" content="{{ page.description }}" />
-	<meta name="medium" content="blog" />
 
-	<link href="/static/css/style.css" rel="stylesheet" media="all" />	
-	<link href="/static/css/print.css" rel="stylesheet" media="print" />	
+	<link href="/static/css/style.css" rel="stylesheet" />	
 	<script src="/static/js/modernizr.js"></script>
 </head>
 <body class="{{ page.classname }}">
