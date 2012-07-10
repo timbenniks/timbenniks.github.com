@@ -9,6 +9,12 @@
 	</script>
 {% endif %}
 
+{% if site.url == site.live_url %}	
+	<script>Modernizr.load('/static/js/rotate.{% version %}.js');</script>
+{% else %}
+	<script>Modernizr.load('/static/js/rotate.js');</script>
+{% endif %}
+
 </section>
 </body>
 </html>
