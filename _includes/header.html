@@ -9,31 +9,35 @@
 	
 	<meta name="description" content="{{ page.description }}" />
 	<meta name="keywords" content="{{ page.keywords }}" />
-	
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-	
-	<link rel="apple-touch-icon-precomposed" href="/static/gfx/favicon.png" />
+	<meta name="google-site-verification" content="El5Wtr19CHQY1u_sQOjbuusrXqYCt6I6n3OJSyZEPAg" />
+
+    <link rel="apple-touch-icon-precomposed" href="/static/gfx/favicon.png" />
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/static/gfx/favicon.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/static/gfx/favicon.png" />
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/static/gfx/favicon.png" />
     <link rel="shortcut icon" href="/static/gfx/favicon.png" />
 	
-	<meta name="HandheldFriendly" content="true" />
-	<meta name="MobileOptimized" content="320" />
-    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=1,minimum-scale=1,maximum-scale=1" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=1,minimum-scale=1,maximum-scale=1" />
 		
 	<link href="{{ site.baseurl }}feed.xml" rel="alternate" title="Feed" type="application/atom+xml">	
-		
+	
 	<meta property="og:title" content="{{ page.title }}" />
 	<meta property="og:image" content="/static/gfx/favicon.png" />
 	<meta property="og:site_name" content="Tim Benniks" />
 	<meta property="og:description" content="{{ page.description }}" />
 
-	<link href="/static/css/style.css" rel="stylesheet" />	
-	<script src="/static/js/modernizr.js"></script>
+	{% if site.url == site.live_url %}	
+		<link href="/static/css/style.{% version %}.css" rel="stylesheet" />
+	{% else %}
+		<link href="/static/css/style.css" rel="stylesheet" />
+	{% endif %}
+	
+	{% if site.url == site.live_url %}
+		<script src="/static/js/modernizr.{% version %}.js"></script>
+	{% else %}
+		<script src="/static/js/modernizr.js"></script>
+	{% endif %}
+
 </head>
 <body class="{{ page.classname }}">
 
