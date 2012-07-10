@@ -1,6 +1,6 @@
 (function()
 {
-	if(window.DeviceOrientationEvent) 
+	if(window.DeviceOrientationEvent && !Modernizr.touch) 
 	{
 		var body = document.body,
 			degrees;
