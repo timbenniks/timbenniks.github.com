@@ -29,9 +29,15 @@ I think the component based design pattern can help us with getting the basics r
 With the groundwork in place we hopefully have more time to tackle that hard last twenty percent of 
 a project and go the extra mile with quality assurance. 
 
-Definition of component based design
+Definition of component based design (in my words)
 ------------------------------------
 
+>Component based design is a pattern in which software (website, app, UI, design) is composed of separate, interchangeable items by breaking down their functions into components, each of which accomplishes one function and contains everything necessary to accomplish this. Conceptually this represents a separation of concerns and improves maintainability by having no cross-dependencies between the components.
+
+
+When creating a component based design, instead of creating a monolithic application (where the smallest component is the whole), several smaller components are built separately that, when composed together, will construct the actual UI. These components have their own responsibilities and are reusable throughout the website.
+
+If you look at a website using helicopter view, you will spot many elements that are used over and over again. Lists, images with caption, call to action buttons or media players will usually have the same semantic values but look a little different across the website.
 
 Applied to creating a website
 -----------------------------
