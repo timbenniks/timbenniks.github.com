@@ -14,33 +14,32 @@ metadata:
 In this article I am trying to find a solution for overhead created by a big team during the build of a website. 
 I think the component based design pattern can help us to be more agile. 
 
-Since a year or so I have been working in a big multidisciplinary team. If we work on a global platform website 
-a team usually includes: multiple designers, an art-director, a copywriter, 
+Since a year and a bit I have been working in a big multidisciplinary team. If we work on a global platform website 
+a team usually includes a whole bunch of people: multiple designers, an art-director, a copywriter, 
 an account manager, a project manager, a UI designer, a web-developer, multiple back-end developers, 
 an analytics person, a QA, a technical architect and a technical delivery manager.
 
-Even though our results are always good, I feel like something is going wrong. We tend to work alongside 
-each-other rather than with each-other. We all seem to have our specialities and little islands of knowledge. 
-In such a big team, overhead is inevitable, even if the team consists of extremely talented individuals. 
-To make up for lost time we have to put in a lot of extra effort to make the deadline.
+Working with such a large group of people is bound to generate overhead, even if the end result is usually good.
+In my experience people tend to work alongside each-other as they all have their own specialities and little islands of knowledge. The differenct disciplines all have a different termonology and a different project approach.
 
-We need a process enhancement to kill as much overhead as possible so we can become more agile. 
+We need a process enhancement to kill as much communication overhead as possible.
 I think the component based design pattern can help us with getting the basics right. 
 With the groundwork in place we hopefully have more time to tackle that hard last twenty percent of 
 a project and go the extra mile with quality assurance. 
 
-Definition of component based design (in my words)
-------------------------------------
+What I think Component Based Design is
+--------------------------------------
 
 >Component based design is a pattern in which software (website, app, UI, design) is composed of separate, interchangeable items by breaking down their functions into components, each of which accomplishes one function and contains everything necessary to accomplish this. Conceptually this represents a separation of concerns and improves maintainability by having no cross-dependencies between the components.
 
+When creating a component based design, instead of creating a [monolithic application](http://en.wikipedia.org/wiki/Monolithic_application "Monolithic application") (where the smallest component is the whole), several smaller components are built separately that, when composed together, will construct the actual UI. These components have their own responsibilities and are reusable throughout the website.
 
-When creating a component based design, instead of creating a monolithic application (where the smallest component is the whole), several smaller components are built separately that, when composed together, will construct the actual UI. These components have their own responsibilities and are reusable throughout the website.
+If you look at a website using a helicopter view, you will spot many elements that are used over and over again. Carousels, forms or video players usually have the same semantic values but look a little different depending on the context in which they live.
 
-If you look at a website using helicopter view, you will spot many elements that are used over and over again. Lists, images with caption, call to action buttons or media players will usually have the same semantic values but look a little different across the website.
+How it all works
+---------------------
 
-Applied to creating a website
------------------------------
+As a group components create a webpage. On their own a component has it's own rules and naming convention. Each component is responsible for it's own functionality and styling and is not to communicate with other components. This way a component can live anywhere and according to it's context it can respond to the context it is living in.
 
 PRO'S
 * re-usability of elements.
