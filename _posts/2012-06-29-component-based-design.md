@@ -80,7 +80,6 @@ If you use a tool like [Jira](http://www.atlassian.com/jira "Jira issue and proj
 * Pro communication in between disciplines.
 
 ### Considerations:
-* Photoshop will no longer work. Something more abstract is needed (e.g. fireworks).
 * Takes more time to kick-off.
 * Semantics and naming is hard (needs to work cross disciplines).
 * All disciplines need to understand the pattern and need to be willing to change their way of working.
