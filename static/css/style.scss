@@ -178,6 +178,15 @@ nav {
 		
 		li {
 			font-size: 1.6em;
+			
+			ul {
+				margin: 0 0 0 17px;
+			}
+			
+			p, li {
+				font-size: 1em;
+				margin: 0;
+			}
 		}
 	}
 	
