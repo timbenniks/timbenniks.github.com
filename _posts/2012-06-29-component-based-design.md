@@ -36,12 +36,15 @@ You will benifit a lot if all disciplines know what components are needed to cre
 Have a big a whiteboard session at the beginning of your project and define what blocks you need. Then name them and define their rules and responsibilities.
 
 ### Benefits for the client
-If the client understands the component pattern, they can easily prioritise certain components over others and have input on their behaviour just as easily as the web-developer or the QA lead.
+If the client understands the component pattern, they can easily prioritise certain components over others and have input on their behaviour just as a developer or a project manager could.
 
 For the clients' sake you can create a page with all components so they know what they have. This way they create their website like a puzzle. According to the components they can assign rules to where that are allowd to live so they can control how local market sites use them.
 
 ### Benefits for planning and issue / project tracking 
-If you use a tool like [Jira](http://www.atlassian.com/jira "Jira issue and project tracking") you are in luck. You can define the components in there and assign them issues, userstories and estimates. Each component has a set of requirements.
+If you use a tool like [Jira](http://www.atlassian.com/jira "Jira issue and project tracking") you are in luck. You can define the components in there and assign them issues, user stories and estimates. Each component has a set of requirements. When you plan a sprint, you just add a bunch off components to create a user journey and you are done.
+
+## Benefits for the QA department
+Because we are dealing with components tester can run his scripts against just one component. When you make each component reachable by a url, automatic testing gets a lot easier. Next to this test scripts can be categorized by component and matched to Jira issues and user stories.
 
 ## talk about:
 * Client perspecitive
@@ -56,6 +59,7 @@ If you use a tool like [Jira](http://www.atlassian.com/jira "Jira issue and proj
 	* Component based CMS perhaps?
 	* Analytics per component
 	* Architecture and support documents are now based on the components and their rules.
+	* unit tests per component
 * QA
 	* Unit tests
 	* Per component testing
