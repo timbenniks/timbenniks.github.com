@@ -11,14 +11,14 @@ metadata:
   name: Tim Benniks
 ---
 
-Since a year and a bit I have been working in a big multidisciplinary team. If we work on a global platform website a team usually includes a whole bunch of people: multiple designers, an art-director, a copywriter, 
-an account manager, a project manager, a UI designer, a web-developer, multiple back-end developers, an analytics person, a QA, a technical architect and a technical delivery manager.
+Since a year and a bit I have been working in a big multidisciplinary team. When we work on a big website the team consists of a whole bunch of people. We have multiple designers, an art-director, a copywriter, 
+an account manager, a project manager, a UI designer, a web-developer, multiple back-end developers, an analytics specialist, a QA, a technical architect and a technical delivery manager and sometimes an information analyst and a strategy person. 
 
-Working with such a large group of people is bound to generate overhead, even if the end result is usually good. In my experience people tend to work alongside each-other as they all have their own specialities and little islands of knowledge. Most disciplines have a different termonology and project approach. 
+Working with such a large group of people is bound to generate overhead, even if the end result is usually good. In my experience people tend to work alongside each-other as they all have their own specialities and little islands of knowledge. Most disciplines have a different termonology and project approach. All information ends up in huge spreadsheets and epic word documents. 
 
 We need a process enhancement to kill as much communication overhead as possible.
-I think the component based design pattern can help us with getting the basics right. 
-With the groundwork in place we should have more time to tackle that hard twenty percent at the end of a project and go the extra mile with quality assurance.
+I think the component based design pattern can help us with getting the basics right.
+With the groundwork in place we should have more time to tackle that hard twenty percent at the end of a project and go the extra mile with quality assurance and strategy.
 
 I think that process enhancement is the component based design pattern.
 
@@ -30,7 +30,7 @@ When creating a component based design, instead of creating a [monolithic applic
 
 If you design the component properly you only have to create it once and then reuse it all over the site. You can obviously tweak the styling and adapt the rules a bit according to the context the component is used in.
 
-## This pattern is to be used by all disciplines.
+## This pattern is to be used by all disciplines, at all times. 
 You will benifit a lot if all disciplines know what components are needed to create the website. Communication will be easier when everybody knows what you are talking about when you say that the search filter section needs to go to the compact version when it is displayed after the masthead and while viewed on a small screen.
 
 Have a big a whiteboard session at the beginning of your project and define what blocks you need. Then name them and define their rules and responsibilities.
