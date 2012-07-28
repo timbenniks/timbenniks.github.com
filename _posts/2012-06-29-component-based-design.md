@@ -44,7 +44,7 @@ For the clients' sake you can create a page with all components so they know wha
 If you use a tool like [Jira](http://www.atlassian.com/jira "Jira issue and project tracking") you are in luck. You can define the components in there and assign them issues, user stories and estimates. Each component has a set of requirements. When you plan a sprint, you just add a bunch off components to create a user journey and you are done.
 
 ## Benefits for the QA department
-Because we are dealing with components tester can run his scripts against just one component. When you make each component reachable by a url, automatic testing gets a lot easier. Next to this test scripts can be categorized by component and matched to Jira issues and user stories.
+Because we are dealing with components that have their own rules and responsibilities defined the QA person can run his testscripts against just one component. When you make each component reachable by a url, automatic testing gets a lot easier. Next to this test scripts can be categorized by component and matched to Jira issues and user stories.
 
 ## talk about:
 * Client perspecitive
