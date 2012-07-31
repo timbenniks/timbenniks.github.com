@@ -19,21 +19,42 @@ This is complicated business when you have a lot of different DOM nodes and diff
 
 Wouldn't it be nice to have an automated approach to creating and removing instances and binding and unbinding of events?
 
-We came across this exact issue in a recent project. Without page reloads and ever growing interactive content like parallax elements, video players, customized Omniture (a google analytics like beast) it became clear that our initial approach 
+We came across this exact issue in a recent project. Without page reloads and ever growing interactive content like parallax elements, video players and image carousels, the thing became a beast. We needed a change of approach.
 
 
+## The solution
+The issue was solved by storing the JavaScript instance to a data attribute on the DOM node it interacts with. When you want to talk to that specific instance, just query the DOM node to get the public functions of that instance.
 
+## Instantiating
+Put the name of the class as a data-attribute on the DOM node it interacts with:
 
+```
+<span id="i_am_a_tooltip" data-widget="tooltip"></span>
+```
 
+A little [piece of JavaScript](#the_javascript) will query the document (or any other piece of html) for nodes that have the data-widget attribute. Once it finds them, it will try to instantiate the value of the data-widget attribute as a JavaScript class. If it the value actually is a function, it will add the instance as a data attribute to the DOM node with the name of the class. In case of the tooltip:
 
+```
+data-tooltip="new tooltip()";
+```
 
+If the instance already exists for that nide it returns that one instead of instantiating a new version.
+If you want to execute a funciton within that class do this: 
 
+```
+var tooltipInstance = $('#i_am_a_tooltip').data('tooltip');
+```
 
+``` tooltipInstance ``` is now the specific class that has been attached to that DOM node.
 
+## Options
+The options the class needs are also applied as a data attribute on that same DOM node. Only the options you want to override are in the data-options attribute, keep the defaults in the class to not bloat the html. 
 
+```
+<span data-widget="tooltip" data-options='{"text": "I am a tooltip"}'></span>
+```
 
+The nifty thing about a data-options attribute is that the backend can fill it up from it's page controller. No more issues with internationalisation and strings in your JavaScript.
 
-
-
-
-
+## The JavaScript
+bla
