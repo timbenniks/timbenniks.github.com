@@ -28,31 +28,32 @@ The issue was solved by storing the JavaScript instance to a data attribute on t
 ## Instantiating
 Put the name of the class as a data-attribute on the DOM node it interacts with:
 
-```
+{% highlight html %}
 <span id="i_am_a_tooltip" data-widget="tooltip"></span>
-```
+{% endhighlight %}
 
 A little [piece of JavaScript](#the_javascript) will query the document (or any other piece of html) for nodes that have the data-widget attribute. Once it finds them, it will try to instantiate the value of the data-widget attribute as a JavaScript class. If it the value actually is a function, it will add the instance as a data attribute to the DOM node with the name of the class. In case of the tooltip:
 
-```
+{% highlight html %}
 data-tooltip="new tooltip()";
-```
+{% endhighlight %}
 
 If the instance already exists for that nide it returns that one instead of instantiating a new version.
 If you want to execute a funciton within that class do this: 
 
-```
+{% highlight js %}
 var tooltipInstance = $('#i_am_a_tooltip').data('tooltip');
-```
+{% endhighlight %}
 
 ``` tooltipInstance ``` is now the specific class that has been attached to that DOM node.
 
 ## Options
 The options the class needs are also applied as a data attribute on that same DOM node. Only the options you want to override are in the data-options attribute, keep the defaults in the class to not bloat the html. 
 
-```
+{% highlight html %}
 <span data-widget="tooltip" data-options='{"text": "I am a tooltip"}'></span>
-```
+{% endhighlight %}
+
 
 The nifty thing about a data-options attribute is that the backend can fill it up from it's page controller. No more issues with internationalisation and strings in your JavaScript.
 
