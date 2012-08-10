@@ -11,16 +11,14 @@ metadata:
   name: Tim Benniks
 ---
 
-Since a year and a bit I have been working in a big multidisciplinary team. When we work on a big website the team consists of a whole bunch of people. We have multiple designers, an art-director, a copywriter, 
+Since I work at [AKQA](http://www.akqa.com) I work in a big multidisciplinary team. When we build a typical website the team consists of a whole bunch of people. We have multiple designers, an art-director, a copywriter, 
 an account manager, a project manager, a UI designer, a web-developer, multiple back-end developers, an analytics specialist, a QA, a technical architect and a technical delivery manager and sometimes an information analyst and a strategy person. 
 
-Working with such a large group of people is bound to generate overhead, even if the end result is usually good. In my experience people tend to work alongside each-other as they all have their own specialities and little islands of knowledge. Most disciplines have a different terminology and project approach. All information ends up in huge spread sheets and epic word documents. 
+Working with such a large group of people is bound to generate overhead due to communication issues. In my experience disciplines tend to work alongside each-other as they all have their own terminology and little islands of knowledge. In the end all information ends up in huge spread sheets or epic word documents. 
 
-We need a process enhancement to kill as much communication overhead as possible.
+To be more flexible and agile we need to kill as much communication overhead as possible.
 I think the component based design pattern can help us with getting the basics right.
-With the groundwork in place we should have more time to tackle that hard twenty per cent at the end of a project and go the extra mile with quality assurance and strategy.
-
-I think that process enhancement is the component based design pattern.
+With the groundwork in place we should have more time go the extra mile with quality assurance and innovation.
 
 ## What I think component based design is
 
@@ -28,7 +26,7 @@ I think that process enhancement is the component based design pattern.
 
 When creating a component based design, instead of creating a [monolithic application](http://en.wikipedia.org/wiki/Monolithic_application "Monolithic application") (where the smallest component is the whole), several smaller components are built separately that, when composed together, will construct the actual UI. These components have their own responsibilities and are reusable throughout the website.
 
-If you design the component properly you only have to create it once and then reuse it all over the site. You can obviously tweak the styling and adapt the rules a bit according to the context the component is used in.
+If a component has been designed properly it can be reused all over the website. Styling and behaviour could be tweaked according to the context the component lives in. The beauty is that you only have to create in once.
 
 ## This pattern is to be used by all disciplines, at all times. 
 You will benefit a lot if all disciplines know what components are needed to create the website. Communication will be easier when everybody knows what you are talking about when you say that the search filter section needs to go to the compact version when it is displayed after the masthead and while viewed on a small screen.
@@ -43,7 +41,7 @@ If the client understands the component pattern, they can easily prioritise cert
 For the clients' sake you can create a page with all components so they know what they have. This way they create their website like a puzzle. According to the components they can create access control ruls per component so any agency can create a webpage without stuff breaking.
 
 ### Planning, issue- and project tracking 
-If you use a tool like [Jira](http://www.atlassian.com/jira "Jira issue and project tracking") you are in luck. You can define the components in there and assign them issues, user stories and estimates. Each component has a set of requirements. When you plan a sprint, you just add a bunch off components to create a user journey and you are done.
+If you use a tool like [Jira](http://www.atlassian.com/jira "Jira issue and project tracking") you are in luck. You can define the components in there and assign them issues, user stories and estimates. Each component has a set of requirements. When you plan a sprint, you just add a bunch of components to create a user journey and you are done.
 
 ### QA department
 Because we are dealing with components that have their own rules and responsibilities defined the QA person can run his test scripts against just one component. When you make each component reachable by a url, automatic testing gets a lot easier. Next to this, test scripts can be categorised by component and matched to Jira issues and user stories.
@@ -59,7 +57,7 @@ Component based design is [not a new thing](http://en.wikipedia.org/wiki/Compone
 Components have their own model, view and controller in both back-end and front-end. Next to that they get their own unit-tests, CSS file(s), JavaScript file(s), translations and analytics tracking.
 
 ## Considerations
-It takes more time before you get to do some actual coding or designing when you work this way. I can imagine prople wanting to jump in and kick off. I suggest using prototypes to validate your ideas and from there define the components.
+It takes more time before you get to do some actual coding or designing when you work this way. I can imagine people wanting to jump in and kick off. I suggest using prototypes to validate your ideas and from there define the components.
 
 Semantics are hard. You have to make sure stuff has been named properly otherwise you might have to rework things later on in the project. Naming is also difficult across disciplines as they all use different naming conventions.
 
