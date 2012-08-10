@@ -35,37 +35,32 @@ You will benefit a lot if all disciplines know what components are needed to cre
 
 Have a big a whiteboard session at the beginning of your project and define what blocks you need. Then name them and define their rules and responsibilities.
 
-### Benefits for the client
-If the client understands the component pattern, they can easily prioritise certain components over others and have input on their behaviour just as a developer or a project manager could.
+The UI person or information architect is the one responsible for documenting what was written on the whiteboard. The content of the document should also match (or dictate) the [issue tracker's](#benefits_for_planning_and_issue_and_project_tracking) user stories, acceptance criteria and requirements per component.
+
+### Client
+If the client understands the component pattern, they can easily prioritise certain components over others and have input on their behaviour just like a developer or a project manager could.
 
 For the clients' sake you can create a page with all components so they know what they have. This way they create their website like a puzzle. According to the components they can create access control ruls per component so any agency can create a webpage without stuff breaking.
 
-### Benefits for planning and issue / project tracking 
+### Planning, issue- and project tracking 
 If you use a tool like [Jira](http://www.atlassian.com/jira "Jira issue and project tracking") you are in luck. You can define the components in there and assign them issues, user stories and estimates. Each component has a set of requirements. When you plan a sprint, you just add a bunch off components to create a user journey and you are done.
 
-### Benefits for the QA department
-Because we are dealing with components that have their own rules and responsibilities defined the QA person can run his testscripts against just one component. When you make each component reachable by a url, automatic testing gets a lot easier. Next to this, test scripts can be categorized by component and matched to Jira issues and user stories.
+### QA department
+Because we are dealing with components that have their own rules and responsibilities defined the QA person can run his test scripts against just one component. When you make each component reachable by a url, automatic testing gets a lot easier. Next to this, test scripts can be categorised by component and matched to Jira issues and user stories.
 
-## TODO
-* Development (web-dev and back-end)
-	* Naming conventions
-	* Per component CSS / JavaScript / lazy loading
-	* Per component model / view / controller
-	* Per component translations
-	* Component based CMS perhaps?
-	* Analytics per component
-	* Architecture and support documents are now based on the components and their rules.
-	* unit tests per component
-* UI 
-	* The same naming conventions and rules of usage.
-	* Match Jira requirements and user stories
-	* The basic rules are defined in this discipline
-* Designers
-	* Design according to components
-	* Style guide is just a collection of components with their rules written down
-	* Use software that can include components e.g. fireworks
+### Designers
+In Photoshop you can design the components as smart objects. To create a page you only have to import the smart objects and arrange them properly. Once you change the design of a smart object it is updated on all places where the smart object has been used.
 
-### Considerations:
-* Takes more time to kick-off.
-* Semantics and naming is hard (needs to work cross disciplines).
-* All disciplines need to understand the pattern and need to be willing to change their way of working.
+Next to the smart object awesomeness, a style guide is very easy to create. Just create in file on which you include all smart objects.
+
+### Developers
+Component based design is [not a new thing](http://en.wikipedia.org/wiki/Component-based_software_engineering) for developers. Components without dependencies on other components are easy to reuse and maintain. As they define their own responsibilities and use proper naming conventions they should be very understandable.
+
+Components have their own model, view and controller in both back-end and front-end. Next to that they get their own unit-tests, CSS file(s), JavaScript file(s), translations and analytics tracking.
+
+## Considerations
+It takes more time before you get to do some actual coding or designing when you work this way. I can imagine prople wanting to jump in and kick off. I suggest using prototypes to validate your ideas and from there define the components.
+
+Semantics are hard. You have to make sure stuff has been named properly otherwise you might have to rework things later on in the project. Naming is also difficult across disciplines as they all use different naming conventions.
+
+And last but not least, everybody in the team has to be on board with this way of working. If they don't quite get it communication is difficult again and the overhead is back. 
