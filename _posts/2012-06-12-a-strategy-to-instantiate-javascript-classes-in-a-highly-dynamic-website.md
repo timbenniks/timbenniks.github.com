@@ -19,8 +19,7 @@ This is complicated business when you have a lot of different DOM nodes and diff
 
 Wouldn't it be nice to have an automated approach to creating and removing instances and binding and unbinding of events?
 
-We came across this exact issue in a recent project. Without page reloads and ever growing interactive content like parallax elements, video players and image carousels, the thing became a beast. We needed a change of approach.
-
+We came across this exact issue in a recent project. Without page reloads and ever growing interactive content, like parallax elements, video players and image carousels, the thing became a beast. We needed a change of approach.
 
 ## The solution
 The issue was solved by storing the JavaScript instance to a data attribute on the DOM node it interacts with. When you want to talk to that specific instance, just query the DOM node to get the public functions of that instance.
