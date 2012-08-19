@@ -26,7 +26,7 @@ With the groundwork in place we should have more time go the extra mile with qua
 
 When creating a component based design, instead of creating a [monolithic application](http://en.wikipedia.org/wiki/Monolithic_application "Monolithic application") (where the smallest component is the whole), several smaller components are built separately that, when composed together, will construct the actual UI. These components have their own responsibilities and are reusable throughout the website.
 
-If a component has been designed properly it can be reused all over the website. Styling and behaviour could be tweaked according to the context the component lives in. The beauty is that you only have to create in once.
+If a component has been designed properly it can be reused all over the website. Styling and behavior could be tweaked according to the context the component lives in. The beauty is that you only have to create in once.
 
 ## This pattern is to be used by all disciplines, at all times. 
 You will benefit a lot if all disciplines know what components are needed to create the website. Communication will be easier when everybody knows what you are talking about when you say that the search filter section needs to go to the compact version when it is displayed after the masthead and while viewed on a small screen.
@@ -36,7 +36,7 @@ Have a big a whiteboard session at the beginning of your project and define what
 The UI person or information architect is the one responsible for documenting what was written on the whiteboard. The content of the document should also match (or dictate) the [issue tracker's](#benefits_for_planning_and_issue_and_project_tracking) user stories, acceptance criteria and requirements per component.
 
 ### Client
-If the client understands the component pattern, they can easily prioritise certain components over others and have input on their behaviour just like a developer or a project manager could.
+If the client understands the component pattern, they can easily prioritize certain components over others and have input on their behavior just like a developer or a project manager could.
 
 For the clients' sake you can create a page with all components so they know what they have. This way they create their website like a puzzle. According to the components they can create access control ruls per component so any agency can create a webpage without stuff breaking.
 
@@ -44,7 +44,7 @@ For the clients' sake you can create a page with all components so they know wha
 If you use a tool like [Jira](http://www.atlassian.com/jira "Jira issue and project tracking") you are in luck. You can define the components in there and assign them issues, user stories and estimates. Each component has a set of requirements. When you plan a sprint, you just add a bunch of components to create a user journey and you are done.
 
 ### QA department
-Because we are dealing with components that have their own rules and responsibilities defined the QA person can run his test scripts against just one component. When you make each component reachable by a url, automatic testing gets a lot easier. Next to this, test scripts can be categorised by component and matched to Jira issues and user stories.
+Because we are dealing with components that have their own rules and responsibilities defined the QA person can run his test scripts against just one component. When you make each component reachable by a url, automatic testing gets a lot easier. Next to this, test scripts can be categorized by component and matched to Jira issues and user stories.
 
 ### Designers
 In Photoshop you can design the components as smart objects. To create a page you only have to import the smart objects and arrange them properly. Once you change the design of a smart object it is updated on all places where the smart object has been used.
