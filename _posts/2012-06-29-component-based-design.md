@@ -14,7 +14,7 @@ metadata:
 Since I work at [AKQA](http://www.akqa.com) I work in a big multidisciplinary team. When we build a typical website the team consists of a whole bunch of people. We have multiple designers, an art-director, a copywriter, 
 an account manager, a project manager, a UI designer, a web-developer, multiple back-end developers, an analytics specialist, a QA, a technical architect and a technical delivery manager and sometimes an information analyst and a strategy person. 
 
-Working with such a large group of people is bound to generate overhead due to communication issues. In my experience disciplines tend to work alongside each-other as they all have their own terminology and little islands of knowledge. In the end all information ends up in huge spread sheets or epic word documents. 
+Working with such a large group of people is bound to generate overhead due to communication issues. In my experience disciplines tend to work alongside each-other as they all have their own terminology. And in the end all information ends up in huge spread sheets or epic word documents. 
 
 To be more flexible and agile we need to kill as much communication overhead as possible.
 I think the component based design pattern can help us with getting the basics right.
@@ -26,16 +26,16 @@ With the groundwork in place we should have more time go the extra mile with qua
 
 When creating a component based design, instead of creating a [monolithic application](http://en.wikipedia.org/wiki/Monolithic_application "Monolithic application") (where the smallest component is the whole), several smaller components are built separately that, when composed together, will construct the actual UI. These components have their own responsibilities and are reusable throughout the website.
 
-If a component has been designed properly it can be reused all over the website. Styling and behavior could be tweaked according to the context the component lives in. The beauty is that you only have to create in once.
+If a component has been designed properly it can be reused all over the website. Styling and behavior could be tweaked according to the context the component lives in. The beauty is that you only have to create a component once.
 
-## This pattern is to be used by all disciplines, at all times. 
-You will benefit a lot if all disciplines know what components are needed to create the website. Communication will be easier when everybody knows what you are talking about when you say that the search filter section needs to go to the compact version when it is displayed after the masthead and while viewed on a small screen.
+## The pattern is to be used by all disciplines, at all times. 
+You will benefit if all disciplines know which components are needed to create a website. Communication will be way easier when everybody uses the same terminology and semantics while talking about the project.
 
-Have a big a whiteboard session at the beginning of your project and define what blocks you need. Then name them and define their rules and responsibilities.
+Have a big a whiteboard session at the beginning of your project and define what blocks you need. Then define their rules and responsibilities and give the components logical names.
 
-The UI person or information architect is the one responsible for documenting what was written on the whiteboard. The content of the document should also match (or dictate) the [issue tracker's](#benefits_for_planning_and_issue_and_project_tracking) user stories, acceptance criteria and requirements per component.
+The UI designer or information architect is the one responsible for documenting what was written on the whiteboard. The content of the document should also match (or dictate) the [issue tracker's](#benefits_for_planning_and_issue_and_project_tracking) user stories, acceptance criteria and requirements per component.
 
-### Client
+### Clients
 If the client understands the component pattern, they can easily prioritize certain components over others and have input on their behavior just like a developer or a project manager could.
 
 For the clients' sake you can create a page with all components so they know what they have. This way they create their website like a puzzle. According to the components they can create access control ruls per component so any agency can create a webpage without stuff breaking.
