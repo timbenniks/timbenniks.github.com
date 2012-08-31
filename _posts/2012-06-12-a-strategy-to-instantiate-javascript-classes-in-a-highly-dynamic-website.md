@@ -11,18 +11,17 @@ metadata:
   name: Tim Benniks
 ---
 
-Imagine you have an endless-scrolling website that loads data by an AJAX call every time you reach a certain point when scrolling.
-Because the new HTML is not yet known by the browsers' JavaScript engine, the events attached to the DOM nodes will not work.
+Imagine you have an endless-scrolling website that loads data by an AJAX call every time you reach a certain point when browsing. Because the new HTML is not yet known by the browsers' JavaScript engine, the events attached to the original DOM will not work on the new nodes.
 
-You could solve this by creating a script that subscribes to the AJAX complete event and then assigns the proper events to the DOM nodes that where loaded by the AJAX call. 
-This is complicated business when you have a lot of different DOM nodes and different scripts listening to the AJAX complete event. What if you do a new AJAX call? Does your browser remove the bindings and does it garbage-collect the now unused JavaScript instances? These are both valid questions when you create a big and highly dynamic website. And next to it's complexity it's [quite slow](http://jsperf.com/jquery-live-vs-delegate-vs-on/23 "Live events are slow") when you use live events.
+You could solve this by creating a script that subscribes to the AJAX complete event and then assigns the proper events to the DOM nodes that where loaded by the AJAX call.
+This is complicated business when you have a lot of different DOM nodes and different scripts listening to the AJAX complete event. Next to it's complexity, live event binding is [quite slow](http://jsperf.com/jquery-live-vs-delegate-vs-on/23 "Live events are slow").
 
-Wouldn't it be nice to have an automated approach to creating and removing instances and binding and unbinding of events?
+What if you do another AJAX call? Does your browser remove the bindings it had on the DOM that was replaced by the HTML of the AJAX call? And does it garbage-collect the now unused JavaScript instances? When building a big and highly dynamic website these questions have te be awnsered before you run into a big pile of sh*t while keeping strack of all bindings and states of your JavaScript instances.
 
-We came across this exact issue in a recent project. Without page reloads and ever growing interactive content, like parallax elements, video players and image carousels, the thing became a beast. We needed a change of approach.
+Wouldn't it be nice to have an automated approach for creating / removing instances and binding / unbinding of events on any DOM node?
 
 ## The solution
-The issue was solved by storing the JavaScript instance to a data attribute on the DOM node it interacts with. When you want to talk to that specific instance, just query the DOM node to get the public functions of that instance.
+The issue is solved by storing the JavaScript instance to a data attribute on the DOM node it interacts with. When you want to talk to that specific instance, just query the DOM node to get the public functions of that instance.
 
 ## Instantiating
 Put the name of the class as a data-attribute on the DOM node it interacts with:
@@ -52,7 +51,6 @@ The options the class needs are also applied as a data attribute on that same DO
 {% highlight html %}
 <span data-widget="tooltip" data-options='{"text": "I am a tooltip"}'></span>
 {% endhighlight %}
-
 
 The nifty thing about a data-options attribute is that the backend can fill it up from it's page controller. No more issues with internationalisation and strings in your JavaScript.
 
