@@ -1,16 +1,9 @@
+</section>
 {% if site.url == site.live_url %}	
 	<script>
-		var _gaq=[['_setAccount','UA-6797812-3'],['_trackPageview'],['_trackPageLoadTime']];
+		var _gaq=[['_setAccount','UA-6797812-3'],['_trackPageview']];
 		Modernizr.load('//www.google-analytics.com/ga.js');
 	</script>
 {% endif %}
-
-{% if site.url == site.live_url %}	
-	<script>Modernizr.load('/static/js/rotate.{% version %}.js');</script>
-{% else %}
-	<script>Modernizr.load('/static/js/rotate.js');</script>
-{% endif %}
-
-</section>
 </body>
 </html>

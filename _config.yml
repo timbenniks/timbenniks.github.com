@@ -4,7 +4,7 @@ server:      	false
 server_port: 	4000
 baseurl:    	/
 
-url: 			http://loclahost:4000
+url: 			http://2012.timbenniks.nl
 live_url: 		http://2012.timbenniks.nl
 
 source:      	.
