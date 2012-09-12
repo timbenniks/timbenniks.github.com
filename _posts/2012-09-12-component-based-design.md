@@ -7,6 +7,7 @@ kind: blog
 permalink: /blog/component-based-design
 nav_url: /blog/
 published: true
+change_frequency: monthly
 metadata: 
 - role: by
   name: Tim Benniks

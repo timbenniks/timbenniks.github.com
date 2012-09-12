@@ -7,6 +7,7 @@ kind: blog
 permalink: /blog/a-strategy-to-instantiate-javascript-classes-in-a-highly-dynamic-website
 nav_url: /blog/
 published: false
+change_frequency: monthly
 metadata: 
 - role: by
   name: Tim Benniks
