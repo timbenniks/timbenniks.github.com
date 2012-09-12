@@ -11,10 +11,10 @@ metadata:
   name: Tim Benniks
 ---
 
-Since I work at [AKQA](http://www.akqa.com) I work in a big multidisciplinary team. When we build a typical website the team consists of a whole bunch of people. We have multiple designers, an art-director, a copywriter, 
+At [AKQA](http://www.akqa.com) we work in a big multidisciplinary team. When we build a typical website the team consists of a whole bunch of people. We have multiple designers, an art-director, a copywriter, 
 an account manager, a project manager, a UI designer, a web-developer, multiple back-end developers, an analytics specialist, a QA, a technical architect and a technical delivery manager and sometimes an information analyst and a strategy person. 
 
-Working with such a large group of people is bound to generate overhead due to communication issues. In my experience disciplines tend to work alongside each-other as they all have their own terminology. And in the end all information ends up in huge spread sheets or epic word documents. 
+Working with such a large group of people is bound to generate overhead due to communication issues. In my experience disciplines tend to work alongside each-other as they all have their own terminology.
 
 To be more flexible and agile we need to kill as much communication overhead as possible.
 I think the component based design pattern can help us with getting the basics right.
