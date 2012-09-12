@@ -6,6 +6,7 @@ keywords: developement, startegy, pattern
 kind: blog
 permalink: /blog/component-based-design
 nav_url: /blog/
+published: true
 metadata: 
 - role: by
   name: Tim Benniks
