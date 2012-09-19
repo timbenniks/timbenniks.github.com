@@ -1,0 +1,21 @@
+---
+layout: default
+title: 404 Page Not Found.
+description: The page you where looking for could not be found.
+keywords: web-developer, CSS, Javascript, Progressive enhancement, adaptive design
+classname: home-page
+nav_url: /404.html
+---
+
+<header>
+	<h1>Page Not Found</h1>
+	<h2>The page you where looking for could not be found.</h2>
+</header>
+
+<nav>
+{% for p in site.navigation %}
+	<a  href="{{ p.url }}" title="{{ p.text }}">{{ p.text }}</a>
+{% endfor %}
+</nav>
+
+<p>&diams;</p>
