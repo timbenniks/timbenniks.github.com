@@ -4,7 +4,7 @@ server:      	false
 server_port: 	4000
 baseurl:    	/
 
-url: 			http://localhost:4000
+url: 			http://www.timbenniks.nl
 live_url: 		http://www.timbenniks.nl
 
 source:      	.
