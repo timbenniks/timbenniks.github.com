@@ -18,7 +18,7 @@ Imagine you have an endlessly-scrolling website that loads html with an ajax cal
 You could solve this by creating a script that subscribes to the ajax complete event and then assigns the proper events to the dom nodes that where loaded by the ajax call.
 This is complicated business when you have a lot of different dom nodes and different scripts listening to the ajax complete event. Next to it's complexity, live event binding is [quite slow](http://jsperf.com/jquery-live-vs-delegate-vs-on/23 "Live events are slow").
 
-What if you do another ajax call? Does your browser remove the bindings it had on the dom that was replaced by the new nodes? And does it garbage-collect the now unused javascript instances? When building a big and highly dynamic website these questions have to be awnsered before you run into a big pile of shit while keeping strack of all bindings and states of your instances.
+What if you do another ajax call? Does your browser remove the bindings it had on the dom that was replaced by the new nodes? And does it garbage-collect the now unused javascript instances? When building a big and highly dynamic website these questions have to be answered before you run into a big pile of shit while keeping strack of all bindings and states of your instances.
 
 Wouldn't it be nice to have an automated approach for creating / removing instances and binding / unbinding of events on any dom node?
 
@@ -44,7 +44,7 @@ data-tooltip="new tooltip()";
 If the instance already exists for that nide it returns that one instead of instantiating a new version.
 If you want to execute a funciton within that class do this: 
 
-{% highlight html %}
+{% highlight js %}
 var tooltipInstance = $('#i_am_a_tooltip').data('tooltip');
 {% endhighlight %}
 
@@ -101,7 +101,8 @@ var scanner:
 			existingWidget = $.data(element, widgetName),
 		    instance;
 		
-        instance = existingWidget || $.data(element, widgetName, new instanceName(element, options));
+        instance = existingWidget 
+                || $.data(element, widgetName, new instanceName(element, options));
 		
         if(typeof instance.destroy !== 'function')
         {
@@ -123,8 +124,7 @@ var scanner:
             case 4: return ns[ parts[0] ] [ parts[1] ] [ parts[2] ] [ parts[3] ];
 			
             default: 
-                ns.catchError({message: widgetName +' has '+ parts.length +' parts. Cannot convert into a constructor.', fileName: '03.Toolbox.js', lineNumber: 120});
-                return 'Cannot convert into a constructor';
+                throe('Cannot convert into a constructor');
         }
     }
 },
@@ -141,7 +141,7 @@ getWidgetsInContext: function(context, widget)
 	
     context.find('[data-widget="'+ widget +'"]').each(function()
     {
-        widgets.push(ns.getWidgetBySelector($(this), widget));
+        widgets.push(scanner.getWidgetBySelector($(this), widget));
     });
 	
     return widgets;
@@ -149,7 +149,7 @@ getWidgetsInContext: function(context, widget)
 
 destroyWidget: function(selector, widget)
 {
-    var widgetInstance = ns.getWidgetBySelector(selector, widget);
+    var widgetInstance = scanner.getWidgetBySelector(selector, widget);
 	
     if(!widgetInstance)
     {
