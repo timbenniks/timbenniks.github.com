@@ -16,6 +16,8 @@ permalink: .htaccess
 
   ErrorDocument 404 /404/index.html
   
+  rewriterule ^feed/(.*)$ http://timbenniks.nl/feed.xml [r=301,nc]
+  
   rewriterule ^blog/1700/a-mobile-development-strategy(.*)$ http://timbenniks.nl/blog$1 [r=301,nc]
   rewriterule ^blog/1421/my-new-fluffy-css3-layout(.*)$ http://timbenniks.nl/blog$1 [r=301,nc]
   rewriterule ^blog/954/about-jquery-and-performance(.*)$ http://timbenniks.nl/blog$1 [r=301,nc]
@@ -63,8 +65,9 @@ permalink: .htaccess
   rewriterule ^page/900/jquery-growl-like-notification-plugin(.*)$ http://timbenniks.nl/work$1 [r=301,nc]
   rewriterule ^project/919/macrepair(.*)$ http://timbenniks.nl/work$1 [r=301,nc]
   rewriterule ^project/590/fantastic-man(.*)$ http://timbenniks.nl/work$1 [r=301,nc] 
-  
-  rewriterule ^tag/666(.*)$ http://timbenniks.nl$1 [r=301,nc]
-  rewriterule ^tag/507(.*)$ http://timbenniks.nl$1 [r=301,nc]
-  rewriterule ^tag/511(.*)$ http://timbenniks.nl$1 [r=301,nc]
+
+  rewriterule ^id/(.*)$ http://timbenniks.nl [r=301,nc]  
+  rewriterule ^tag/(.*)$ http://timbenniks.nl [r=301,nc]
+  rewriterule ^page/(.*)$ http://timbenniks.nl [r=301,nc]
+  rewriterule ^archive/(.*)$ http://timbenniks.nl [r=301,nc]
 </IfModule>
