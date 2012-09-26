@@ -66,6 +66,8 @@ permalink: .htaccess
   rewriterule ^project/919/macrepair(.*)$ http://timbenniks.nl/work$1 [r=301,nc]
   rewriterule ^project/590/fantastic-man(.*)$ http://timbenniks.nl/work$1 [r=301,nc] 
 
+  rewriterule ^about-tim-benniks$ http://timbenniks.nl/about$1 [r=301,nc] 
+
   rewriterule ^id/(.*)$ http://timbenniks.nl [r=301,nc]  
   rewriterule ^tag/(.*)$ http://timbenniks.nl [r=301,nc]
   rewriterule ^page/(.*)$ http://timbenniks.nl [r=301,nc]
