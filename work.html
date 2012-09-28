@@ -9,15 +9,14 @@ change_frequency: monthly
 ---
 
 <header>
-	<h1>A selection of my work</h1>
+	<h1 id="contentLabel">A selection of my work</h1>
 </header>
-
 
 <div class="list">
 	{% for post in site.posts %}
 		{% if post.kind != 'blog' %}
 			<section class="work-item">
-				<a href="{{ post.url}}"><img src="{{ post.cover_image }}" /></a>
+				<a href="{{ post.url}}" title="{{ post.title }}"><img src="{{ post.cover_image }}" width="320" height="250" title="{{ post.title }}" alt="{{ post.description }}" /></a>
 			</section>
 		{% endif %}
 	{% endfor %}

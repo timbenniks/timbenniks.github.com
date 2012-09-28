@@ -1,5 +1,5 @@
-<nav>
-	<h1>TIM BENNIKS</h1>
+<nav role="navigation">
+	<h1 role="banner">TIM BENNIKS</h1>
 	{% for p in site.navigation %}
 		<a {% if page.nav_url == p.url %}class="current"{% endif %} href="{{ p.url }}" title="{{ p.text }}">{{ p.text }}</a>
 	{% endfor %}

@@ -13,10 +13,10 @@ change_frequency: monthly
 		{% if post.kind != 'work' %}
 			<section class="list-item blogpost">
 				<header>
-					<h1>{{ post.title }}</h1>
+					<h1><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h1>
 				</header>
 				<aside class="intro">
-					<p>{{ post.date | date_to_string }} &mdash; {{ post.description | replace: '.','' | truncatewords: 10}} <a href="{{ post.url }}"><em>Read more &raquo;</em></a></p>
+					<p><time datetime="{{ post.date }}">{{ post.date | date_to_string }}</time> &mdash; {{ post.description | replace: '.','' | truncatewords: 10}} <a href="{{ post.url }}" tabindex="-1">Read more &raquo;</a></p>
 				</aside>
 			</section>		
 		{% endif %}

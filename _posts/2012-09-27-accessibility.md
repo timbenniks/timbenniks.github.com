@@ -18,14 +18,17 @@ metadata:
 * Why write about this
 * Document outline
 	- Semantics
-	- WAI-ARIA landmarks
+	- WAI-ARIA landmarks (aria-labelledby, aria-described-by)
+	- tabindex = -1 for tab flow.
 * Focus
 	- forms
 	- keyboard navigation
 	- outline styles
+* `<iframe role="presentation" tabindex="-1"></iframe>`
 * No JavaScript version
 * Scalability of content (responsive design)
 * Content first approach
+* sources: http://yaccessibilityblog.com, http://yaccessibilityblog.com/library/test-aria-focus-bookmarklets.html
 
 ##Why write about this?
 Time and time again I see websites going live with bad accessibility. 

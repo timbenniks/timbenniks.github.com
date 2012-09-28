@@ -10,11 +10,11 @@ priority: 1.0
 ---
 
 <header>
-	<h1>Hi, I'm Tim and I create websites.</h1>
+	<h1 id="contentLabel">Hi, I'm Tim and I create websites.</h1>
 	<h2>I am a web-developer with a passion for fancy web-stuff and I'm in love with typography.</h2>
 </header>
 
-<nav>
+<nav role="navigation">
 {% for p in site.navigation %}
 	{% if p.text != 'Home' %}
 		<a  href="{{ p.url }}" title="{{ p.text }}">{{ p.text }}</a>

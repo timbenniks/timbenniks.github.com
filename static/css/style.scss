@@ -48,6 +48,10 @@ a {
 	&:hover	{
 		color: darken(#9C0001, 5%);
 	}
+	
+	&:focus {
+		outline: 1px dotted #9C0001;
+	}
 }
 
 p {
@@ -158,6 +162,13 @@ nav {
 			background: darken(#9C0001, 5%);
 			color: #fff;
 		}
+		
+		&:focus {
+			outline: 0;
+			background: darken(#9C0001, 10%);
+			color: #fff;
+		}
+
 	}
 }
 
@@ -204,6 +215,10 @@ nav {
 			font-size: 2em;
 			color: #9C0001;
 			line-height: 25px;
+			
+			a {
+				font-style: italic;
+			}
 		}
 		
 		&.metadata {
@@ -262,6 +277,15 @@ nav {
 			h1 {
 				font-size: 2.5em;
 				margin: 0 0 10px 0;
+				
+				a {
+					color: #333;
+					text-decoration: none;
+					
+					&:hover {
+						color: #111;
+					}
+				}
 			}
 		}
 		
@@ -456,8 +480,14 @@ nav {
 				width: 320px;
 				margin: 0 20px 10px 0;
 				
+				a {
+					display: block;
+					overflow: hidden;
+					width: 332px;
+				}
+				
 				img {
-					width: 100%;
+					width: auto;
 					height: auto;
 					border: 1px solid #ddd;
 					padding: 5px;
