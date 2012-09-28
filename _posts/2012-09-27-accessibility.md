@@ -6,7 +6,7 @@ keywords: Accessibility
 kind: blog
 permalink: /blog/a-pragmatic-approach-to-accessibility
 nav_url: /blog/
-published: true
+published: false
 change_frequency: monthly
 metadata:
 - role: by
