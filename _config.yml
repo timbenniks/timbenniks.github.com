@@ -4,7 +4,7 @@ server:      	false
 server_port: 	4000
 baseurl:    	/
 
-url: 			http://www.timbenniks.nl
+url: 			http://localhost:4000
 live_url: 		http://www.timbenniks.nl
 
 source:      	.
@@ -26,7 +26,7 @@ maruku:
   png_url:    /images/latex
 
 navigation:
-- text: Home
+- text: home
   url: /
 - text: work
   url: /work/
@@ -34,3 +34,5 @@ navigation:
   url: /blog/
 - text: about me
   url: /about/
+- text: fitness journal
+  url: /fitness-journal/

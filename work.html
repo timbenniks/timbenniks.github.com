@@ -14,7 +14,7 @@ change_frequency: monthly
 
 <div class="list">
 	{% for post in site.posts %}
-		{% if post.kind != 'blog' %}
+		{% if post.kind == 'work' %}
 			<section class="work-item">
 				<a href="{{ post.url}}" title="{{ post.title }}"><img src="{{ post.cover_image }}" width="320" height="250" title="{{ post.title }}" alt="{{ post.description }}" /></a>
 			</section>

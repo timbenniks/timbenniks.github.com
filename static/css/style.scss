@@ -346,6 +346,18 @@ nav {
 	}
 }
 
+.fitness {	
+	h1, h2 {
+		text-align: center;
+	}
+	
+	.list {
+		h1 {
+			text-align: left;
+		}
+	}
+}
+
 @media only screen and (min-width: 480px)
 {
 	nav {

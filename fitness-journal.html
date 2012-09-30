@@ -1,16 +1,19 @@
 ---
 layout: default
-title: Blog
-description: Tim's weblog.
-keywords: web-developer, CSS, Javascript, Progressive enhancement, adaptive design
-classname: blog
-nav_url: /blog/
+title: Tim's fitness journal.
+description: This section of my website is about my journey into a more healthy lifestyle. 
+keywords: fitness, gym, diet, running, cardio, health
+classname: blog fitness
+nav_url: /fitness-journal/
 change_frequency: monthly
 ---
 
+<h1>My fitness journal</h1>
+<h2>This section of my website is about my journey into a more healthy lifestyle.</h2>
+
 <div class="list">
 	{% for post in site.posts %}
-		{% if post.kind == 'blog' %}
+		{% if post.kind == 'fitness' %}
 			<section class="list-item blogpost">
 				<header>
 					<h1><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h1>
