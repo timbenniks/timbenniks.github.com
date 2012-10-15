@@ -27,6 +27,7 @@ permalink: .htaccess
   rewriterule ^blog/964/jquery-notice-featured-on-papermashup-com(.*)$ http://timbenniks.nl/blog$1 [r=301,nc]
   rewriterule ^blog/524/zotonic-a-quick-overview(.*)$ http://timbenniks.nl/blog$1 [r=301,nc]
   rewriterule ^blog/727/zotonic-s-speed-a-benchmark-by-floris-benniks(.*)$ http://timbenniks.nl/blog$1 [r=301,nc]
+  rewriterule ^blog/727/how-fast-is-zotonic-a-benchmark-by-floris-benniks(.*)$ http://timbenniks.nl/blog$1 [r=301,nc]
   rewriterule ^blog/559/hands-on-rules-for-a-fast-website(.*)$ http://timbenniks.nl/blog$1 [r=301,nc]
   rewriterule ^blog/712/step-by-step-guide-to-install-zotonic-on-osx(.*)$ http://timbenniks.nl/blog$1 [r=301,nc]
   rewriterule ^blog/693/the-myth-of-the-page-fold(.*)$ http://timbenniks.nl/blog$1 [r=301,nc]
@@ -61,10 +62,11 @@ permalink: .htaccess
   rewriterule ^project/585/atatonic-css-framework(.*)$ http://timbenniks.nl/work$1 [r=301,nc]
   rewriterule ^project/598/australia-travel-blog(.*)$ http://timbenniks.nl/work$1 [r=301,nc]
   rewriterule ^project/2398/bigairbag(.*)$ http://timbenniks.nl/work/bigairbag/$1 [r=301,nc]
-  rewriterule ^page/937/atatonic-css-framework(.*)$ http://timbenniks.nl/work$1 [r=301,nc]
-  rewriterule ^page/900/jquery-growl-like-notification-plugin(.*)$ http://timbenniks.nl/work$1 [r=301,nc]
+  rewriterule ^project/900/jquery-growl-like-notification-plugin(.*)$ http://timbenniks.nl/work$1 [r=301,nc]
+  rewriterule ^project/937/atatonic-css-framework(.*)$ http://timbenniks.nl/work$1 [r=301,nc]
   rewriterule ^project/919/macrepair(.*)$ http://timbenniks.nl/work$1 [r=301,nc]
-  rewriterule ^project/590/fantastic-man(.*)$ http://timbenniks.nl/work$1 [r=301,nc] 
+  rewriterule ^project/590/fantastic-man(.*)$ http://timbenniks.nl/work$1 [r=301,nc]
+  rewriterule ^project/808/picnic-network(.*)$ http://timbenniks.nl/work$1 [r=301,nc]
 
   rewriterule ^about-tim-benniks$ http://timbenniks.nl/about$1 [r=301,nc] 
 
@@ -72,4 +74,9 @@ permalink: .htaccess
   rewriterule ^tag/(.*)$ http://timbenniks.nl [r=301,nc]
   rewriterule ^page/(.*)$ http://timbenniks.nl [r=301,nc]
   rewriterule ^archive/(.*)$ http://timbenniks.nl [r=301,nc]
+  rewriterule ^designer/(.*)$ http://timbenniks.nl [r=301,nc]
+  rewriterule ^client/(.*)$ http://timbenniks.nl [r=301,nc]
+  rewriterule ^archives/(.*)$ http://timbenniks.nl [r=301,nc]
+  rewriterule ^sandbox/(.*)$ http://timbenniks.nl [r=301,nc]
+  
 </IfModule>

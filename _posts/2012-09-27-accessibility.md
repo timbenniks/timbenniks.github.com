@@ -13,9 +13,27 @@ metadata:
   name: Tim Benniks
 ---
 
-##Talk about
+##I can't keep it in, I need to rant a little.
+Time and time again I see websites with bad accessibility. 
+By bad accessibility I mean seeying a white screen when turning of javascript
+or when `outline: 0` is set to focusable elements so keyboard navigation is disabled.
 
-* Why write about this
+It seems like fancy stuff is more important to a site owner then a website that can 
+handle browsers for the visually challenged or users with JavaScript disabled.
+Even if these users are not of interest (which is the case for many websites) 
+then at least do it so the code is maintainable and suitable for future devices and technologies.
+
+Where has the content first approach gone? A developer should not fight the browser while coding.
+Just make stuff fit into the standards and keep it simple. 
+If that isn't enough, enhance according to the features the browser offers. 
+
+Quit creating fancy stuff and degrade for less capable browsers. 
+This makes things more complicated and there is a big change you forget to 
+create custom javascript code to make the website accessible.
+
+##Enough is enough. Take a deep breath.
+Let's talk about a couple of simple things you can do to make a websote more accessible.
+
 * Document outline
 	- Semantics
 	- WAI-ARIA landmarks (aria-labelledby, aria-described-by)
@@ -29,15 +47,3 @@ metadata:
 * Scalability of content (responsive design)
 * Content first approach
 * sources: http://yaccessibilityblog.com, http://yaccessibilityblog.com/library/test-aria-focus-bookmarklets.html
-
-##A little rant.
-Time and time again I see websites going live with bad accessibility. 
-By bad accessibility I mean turning of javascript and seeing a white page without any content or 
-not being able to navigate the site by keyboard because `outline: 0` is set to focusable elements.
-
-It seems like dynamic stuff and animations are more important to a brand then a website that can 
-handle browsers for the visually challenged, people with a slow connection or users with JavaScript disabled.
-Even if these users are not of interest (which very well could be the case for many websites) 
-then at least do it so the code is maintainable for future technologies and new devices that will no doubt appear.
-
-##Enough ranting, let's get into how you make a website more accessible.
