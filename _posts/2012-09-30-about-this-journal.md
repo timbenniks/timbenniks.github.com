@@ -18,13 +18,12 @@ When I still lived at home my mom used to make sure I didn't go overboard with f
 She stopped me here and there when needed and always made sure we had delicious and healthy food on the table.
 
 After high school I started living on my own and became a lot more active as a musician. 
-I quickly got used a very burgundian lifestyle. I ate all kinds of junk and drank a lot of alcohol.
+I got used to a very burgundian lifestyle and started eating all kinds of junk. The free drinks for musicians also didn't help.
 
-I have always been interested in people who looked ripped and lean but never had the discipline to get there myself. I preferred being a lazy musician and with that comes free drinks and fast food either before or after the gig. I also loved these easy refined foods that come in packages with a shitload of ingredients you don't understand.
+I have always been interested in muscles and posture but never had the discipline to change myself into something I wanted to be. I quickly turned into a lazy musician. Free drinks and fast food either before or after a gig were the norm. I didn't know any better and ate highly refined foods that contain a shitload of ingredients I didn't understand. It was easy and fast.
 
-When I reached 115kg I was in such bad shape that I felt horrible. Always sweating, tired and out of breath. I had high blood pressure and was often sick.
+Being fat was always in the back of my head and it nagged at me. When I reached 115kg (253lbs) I was in such bad shape that I felt horrible. Always sweating, tired and out of breath. I had high blood pressure and was often sick.
 
-##The turning point
-I knew for a while that things had to change. I just didn't know where to begin. I knew nothing about food and fitness.
+Even after this turning point I was still completely inadequate at sports and I didn't have any discipline. I didn't even know how to properly contract my muslces to lift something. No body sense at all.
 
-Then I met Chris. A new guy at work. Next to a great web-developer he was also very fit and very enthousiastic about sports and diet. We became mates and he decided he wanted to help me out.
+I asked my mate Chris to help me out. He was (is) a complete legend and helped my out. He kicked my ass when needed and tought me about lifting weights, running, plyometrics and diet.
