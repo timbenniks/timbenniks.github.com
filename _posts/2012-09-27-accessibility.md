@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A pragmatic approach to accessibility
-description: With many highly dynamic websites popping up and the new HTML5 document outline, accessibility is very important, but also very difficult.
+description: This post provides a bunch of tricks to make your website more accessible.
 keywords: Accessibility
 kind: blog
 permalink: /blog/a-pragmatic-approach-to-accessibility
@@ -13,37 +13,44 @@ metadata:
   name: Tim Benniks
 ---
 
-##I can't keep it in, I need to rant a little.
+##Ranting needed...
 Time and time again I see websites with bad accessibility. 
 By bad accessibility I mean seeying a white screen when turning of javascript
-or when `outline: 0` is set to focusable elements so keyboard navigation is disabled.
+or when `outline: 0` is set to focusable elements.
 
 It seems like fancy stuff is more important to a site owner then a website that can 
 handle browsers for the visually challenged or users with JavaScript disabled.
 Even if these users are not of interest (which is the case for many websites) 
 then at least do it so the code is maintainable and suitable for future devices and technologies.
 
-Where has the content first approach gone? A developer should not fight the browser while coding.
+A developer should not fight the browser while coding.
 Just make stuff fit into the standards and keep it simple. 
-If that isn't enough, enhance according to the features the browser offers. 
+If that isn't enough, enhance according to the features the browser offers.
 
-Quit creating fancy stuff and degrade for less capable browsers. 
-This makes things more complicated and there is a big change you forget to 
-create custom javascript code to make the website accessible.
+Simple things like adding focus to a dialog popup makes it keyboard friendly instanly.
+An awesome quick-win I hardly ever see.
 
-##Enough is enough. Take a deep breath.
-Let's talk about a couple of simple things you can do to make a websote more accessible.
+Quit creating fancy stuff that degrades down for less capable browsers. 
+This requires more code and there is a big chance you forget about accessibility because the complicated process of writing code that degrates consumed all your time in the first place. 
+Use [progressive enhancement](http://www.alistapart.com/articles/understandingprogressiveenhancement/) instead.
 
-* Document outline
-	- Semantics
-	- WAI-ARIA landmarks (aria-labelledby, aria-described-by)
-	- tabindex = -1 for tab flow.
-* Focus
-	- forms
-	- keyboard navigation
-	- outline styles
-* `<iframe role="presentation" tabindex="-1"></iframe>`
-* No JavaScript version
-* Scalability of content (responsive design)
-* Content first approach
-* sources: http://yaccessibilityblog.com, http://yaccessibilityblog.com/library/test-aria-focus-bookmarklets.html
+I think we need an approach in which we make the accessibility of content most important. This includes designing for small screens first as it's way easier to upscale layout than to compress it. It also makes you focus on content first.
+
+##Enough ranting for now.
+Let's talk about a couple of simple adjustments you can make to enhance the accessibility of your website.
+
+### Document outline
+ * html5 outline
+ * backward compatability with html4
+ * go oldschool or use WAI-ARIA landmarks (aria-labelledby, aria-described-by)
+ * tab flow (tabindex)
+
+### Accessible content
+ * forms
+ * keyboard navigation
+ * outline styles
+ * images
+
+### Tools and sources
+ * http://yaccessibilityblog.com
+ * http://yaccessibilityblog.com/library/test-aria-focus-bookmarklets.html
