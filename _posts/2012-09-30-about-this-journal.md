@@ -27,3 +27,13 @@ Being fat was always in the back of my head and it nagged at me. When I reached 
 Even after this turning point I was still completely inadequate at sports and I didn't have any discipline. I didn't even know how to properly contract my muslces to lift something. No body sense at all.
 
 I asked my mate Chris to help me out. He was (is) a complete legend and helped my out. He kicked my ass when needed and tought me about lifting weights, running, plyometrics and diet.
+
+<figure>
+	<img src="/static/gfx/before_2010.jpg" alt="Me on stage in Cafe Miles. August 2010" width="520" />
+	<figcaption>August 2010, 115kg</figcaption>
+</figure>
+
+<figure>
+	<img src="/static/gfx/march_2011.jpg" alt="Me on stage in Cafe Miles. August 2010" width="520" />
+	<figcaption>March 2011, 101kg</figcaption>
+</figure>
