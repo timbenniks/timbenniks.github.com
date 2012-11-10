@@ -11,6 +11,9 @@ change_frequency: monthly
 metadata:
 - role: by
   name: Tim Benniks
+- role: 'on'
+  name: Github
+  url: http://github.com/timbenniks/carousel
 ---
 
 Many projects need a carousel of some sort.
