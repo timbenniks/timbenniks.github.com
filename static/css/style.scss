@@ -74,6 +74,10 @@ h1 {
 	line-height: 1.1;
 	font-family: 'Bell MT', BellMTItalic;
 	font-style: italic;
+
+	&.center {
+		text-align: center;
+	}
 }
 
 h2 {
@@ -181,6 +185,12 @@ nav {
 		margin: 0 0 2em;
 		border-bottom: 1px dotted #ddd;
 		padding: 0 0 2em;
+
+		img {
+			margin: 0 auto;
+			width: auto;
+			height: 37px;
+		}
 	}
 	
 	ul {
@@ -349,6 +359,10 @@ nav {
 .fitness {	
 	h1, h2 {
 		text-align: center;
+	}
+
+	img {
+		margin: 0 auto;
 	}
 	
 	.list {
