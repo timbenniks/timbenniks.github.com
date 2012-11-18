@@ -134,25 +134,47 @@ nav {
 	background: #f8f8f8;
 	margin: 0 0 4em 0;
 	text-align: center;
-	
+	overflow: hidden;
+
 	h1 {
-	    background: #9C0001;
-	    display: block;
-	    font-size: 1.2em;
-	    letter-spacing: 0.1em;
-	    text-align: center;
-	    color: #fff;
-	    font-weight: normal;
-	    padding: 0 1em;
+		background: #9C0001;
+		display: block;
+		font-size: 12px;
+		letter-spacing: 0.1em;
+		text-align: left;
+		color: #fff;
+		font-weight: normal;
+		padding: 0 1em;
 		line-height: 3;
 		font-style: normal;
 		font-family: 'Bell MT', BellMT;
+		height: 36px;
+
+		a {
+			background: none;
+			color: #fff;
+			letter-spacing: 0.1em;
+			padding: 0;
+			margin: 0;
+			line-height: 36px;
+			float: left;
+			font-size: 12px;
+			text-align: left;
+
+			&:hover {
+				background: none;
+			}
+		}
 	}
-	
+
+	.navigation-wrapper {
+		display: none;
+	}
+
    	a {
-		display: inline-block;
-		font-size: 1.2em;
-		line-height: 3;
+		display: block;
+		font-size: 12px;
+		line-height: 36px;
 	    letter-spacing: 0.1em;
 		text-align: center;
 		color: #333;
@@ -160,10 +182,10 @@ nav {
 		padding: 0 1em;
 		text-decoration: none;
 		margin: 0 -0.17em;
-		
+
 		&:hover,
 		&.current {
-			background: darken(#9C0001, 5%);
+			background: #9C0001;
 			color: #fff;
 		}
 		
@@ -172,7 +194,16 @@ nav {
 			background: darken(#9C0001, 10%);
 			color: #fff;
 		}
+	}
 
+	a.navigation-trigger {
+		position: absolute;
+		right: 0;
+		top: 7px;
+
+		&:hover {
+			background: none;
+		}
 	}
 }
 
@@ -372,13 +403,34 @@ nav {
 	}
 }
 
-@media only screen and (min-width: 480px)
+.no-js .navigation-wrapper {
+	display: block;
+}
+
+.no-js a.navigation-trigger {
+	display: none;
+}
+
+
+@media only screen and (min-width: 550px)
 {
 	nav {
 		text-align: left;
 
 		h1 {
 			float: left;
+		}
+
+		.navigation-wrapper {
+			display: block;
+		}
+
+		a.navigation-trigger {
+			display: none;
+		}
+
+		a {
+			display: inline-block;
 		}
 	}
 }

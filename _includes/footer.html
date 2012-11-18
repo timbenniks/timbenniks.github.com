@@ -5,5 +5,20 @@
 		Modernizr.load('//www.google-analytics.com/ga.js');
 	</script>
 {% endif %}
+
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script>
+
+$(function()
+{
+	$('.navigation-trigger').on('click', function(e)
+	{
+		$('.navigation-wrapper').slideToggle(200);
+		e.preventDefault();
+	})
+});
+
+</script>
+
 </body>
 </html>
