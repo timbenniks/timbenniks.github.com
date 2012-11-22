@@ -2,9 +2,113 @@
 layout: nill
 ---
 
-.content {
-	.running-wrapper {
+.content .running-wrapper {
+	width: 100%;
+	margin: 0;
+
+	figure[role="group"] {
 		width: 100%;
-		margin: 0;
+		border-bottom: 1px dotted #ddd;
+
+		figure {
+			width: 25%;
+			float: left;
+
+			.icon {
+				display: block;
+				width: 59px;
+				height: 59px;
+				background: url(../gfx/running_icons.png) no-repeat 0 0;
+				margin: 0 auto 10px;
+			}
+
+			&.total-time .icon { background-position: 0px -116px; }
+			&.average-pace .icon { background-position: 0px -58px; }
+			&.total-distance .icon { background-position: 0px -175px; }
+
+			figcaption {
+				font-size: 17px;
+				font-family: 'Bell MT', BellMT, Georgia, serif;
+				text-align: center;
+				font-style: italic;
+				color: #333;
+				line-height: 1.2;
+
+				strong {
+					display: block;
+					font-family: arial;
+					font-style: normal;
+					color: #333;
+					font-size: 20px;
+				}
+
+				span {
+					font-variant: small-caps;
+					font-size: 16px;
+					padding: 0 0 0 2px;
+				}
+			}
+		}
+
+		&.records {
+
+			.records-column {
+				width: 320px;
+				float: left;
+				margin: 0 0 20px 0;
+
+				figure {
+					width: 100%;
+					float: none;
+
+					.icon {
+						width: 30px;
+						height: 46px;
+					} 
+
+					&.records-distance .icon { background-position: -76px -118px; }
+					&.records-calories .icon { background-position: -76px 3px; }
+					&.records-time .icon { background-position: -76px -172px; }
+					&.records-speed .icon { background-position: -76px -58px; }
+				}
+
+				&:first-child {
+					padding: 0 50px 0 0;
+					width: 319px;
+					border-right: 1px dotted #ddd;
+
+					figure {
+
+						.icon {
+							float: right;
+							margin: 0 0 0 10px;
+						} 
+
+						figcaption {
+							float: right;
+							text-align: right;
+						}
+					}
+				}
+
+				&:last-child {
+					padding: 0 0 0 50px;
+
+					figure {
+	
+						.icon {
+							float: left;
+							margin: 0 10px 0 0;
+						}
+
+						figcaption {
+							float: left;
+							text-align: left;
+						}
+					}
+				}
+			}
+		}
+
 	}
 }
