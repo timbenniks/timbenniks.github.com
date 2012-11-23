@@ -11,8 +11,8 @@ layout: nill
 		border-bottom: 1px dotted #ddd;
 
 		figure {
-			width: 25%;
-			float: left;
+			width: auto;
+			float: none;
 
 			.icon {
 				display: block;
@@ -50,31 +50,77 @@ layout: nill
 			}
 		}
 
-		&.records {
+		&.records .records-column {
+			
+			figure {
+				width: 100%;
+				float: none;
+				overflow: hidden;
 
-			.records-column {
-				width: 320px;
+				.icon {
+					width: 30px;
+					height: 46px;
+				} 
+
+				figcaption {
+					text-align: center;
+				}
+
+				&.records-distance .icon { background-position: -76px -118px; }
+				&.records-calories .icon { background-position: -76px 3px; }
+				&.records-time .icon { background-position: -76px -172px; }
+				&.records-speed .icon { background-position: -76px -58px; }
+			}
+		}
+	}
+
+	.misc {
+		overflow: hidden;
+
+		.misc-item {
+			width: auto;
+			text-align: center;
+			margin: 0 0 50px 0;
+			
+			&:last-child {
+				border: none;
+			}
+
+			p {
+				margin: 0 auto;
+				font-size: 14px;
+				font-style: italic;
+				max-width: 150px;
+				line-height: 12px;
+			}
+
+			h1 {
+				color: #9C0001;
+				line-height: 65px;
+				font-size: 5em;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 768px)
+{
+	.content .running-wrapper {
+
+		figure[role="group"] {
+
+			figure {
+				width: 25%;
+				float: left;
+			}
+
+			&.records .records-column {
 				float: left;
 				margin: 0 0 20px 0;
 
-				figure {
-					width: 100%;
-					float: none;
-
-					.icon {
-						width: 30px;
-						height: 46px;
-					} 
-
-					&.records-distance .icon { background-position: -76px -118px; }
-					&.records-calories .icon { background-position: -76px 3px; }
-					&.records-time .icon { background-position: -76px -172px; }
-					&.records-speed .icon { background-position: -76px -58px; }
-				}
-
 				&:first-child {
 					padding: 0 50px 0 0;
-					width: 319px;
+					width: 299px;
 					border-right: 1px dotted #ddd;
 
 					figure {
@@ -93,6 +139,7 @@ layout: nill
 
 				&:last-child {
 					padding: 0 0 0 50px;
+					width: 300px;
 
 					figure {
 	
@@ -109,34 +156,10 @@ layout: nill
 				}
 			}
 		}
-	}
 
-	.misc {
-		overflow: hidden;
-
-		.misc-item {
-			width: 245px;
+		.misc .misc-item {
+			width: 33%;
 			float: left;
-			text-align: center;
-			margin: 0 0 50px 0;
-			border-right: 1px dotted #ddd;
-
-			&:last-child {
-				border: none;
-			}
-
-			p {
-				margin: 0 auto;
-				font-size: 14px;
-				font-style: italic;
-				max-width: 150px;
-				line-height: 12px;
-			}
-
-			h1 {
-				color: #9C0001;
-				line-height: 65px;
-			}
-		}
+		}	
 	}
 }

@@ -19,7 +19,7 @@ change_frequency: monthly
 					<h1><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h1>
 				</header>
 				<aside class="intro">
-					<p><time datetime="{{ post.date }}">{{ post.date | date_to_string }}</time> &mdash; {{ post.description | replace: '.','' | truncatewords: 10}} <a href="{{ post.url }}" tabindex="-1">Read more &raquo;</a></p>
+					<p>{{ post.description | replace: '.','' | truncatewords: 10}} <a href="{{ post.url }}" tabindex="-1">Read more &raquo;</a></p>
 				</aside>
 			</section>		
 		{% endif %}
