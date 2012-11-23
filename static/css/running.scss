@@ -109,6 +109,34 @@ layout: nill
 				}
 			}
 		}
+	}
 
+	.misc {
+		overflow: hidden;
+
+		.misc-item {
+			width: 245px;
+			float: left;
+			text-align: center;
+			margin: 0 0 50px 0;
+			border-right: 1px dotted #ddd;
+
+			&:last-child {
+				border: none;
+			}
+
+			p {
+				margin: 0 auto;
+				font-size: 14px;
+				font-style: italic;
+				max-width: 150px;
+				line-height: 12px;
+			}
+
+			h1 {
+				color: #9C0001;
+				line-height: 65px;
+			}
+		}
 	}
 }
