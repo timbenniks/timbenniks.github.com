@@ -7,7 +7,7 @@ kind: blog
 permalink: /blog/a-pragmatic-approach-to-accessibility
 nav_url: /blog/
 published: false
-change_frequency: monthly
+change_frequency: weekly
 metadata:
 - role: by
   name: Tim Benniks

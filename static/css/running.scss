@@ -163,3 +163,42 @@ layout: nill
 		}	
 	}
 }
+
+.progress-pics .content {
+	width: 300px;
+	margin: 0 auto;
+
+	.progress {
+		overflow: hidden;
+
+		img {
+			width: 150px;
+			height: 201px;
+			float: left;
+		}
+	}
+}
+
+@media only screen and (min-width: 520px)
+{
+	.progress-pics .content {
+		width: 520px;
+
+		.progress img {
+			width: 173px;
+			height: 232px;
+		}
+	}
+}
+
+@media only screen and (min-width: 768px)
+{
+	.progress-pics .content {
+		width: 740px;
+
+		.progress img {
+			width: 185px;
+			height: 248px;
+		}
+	}
+}

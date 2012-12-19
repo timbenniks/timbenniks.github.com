@@ -6,16 +6,14 @@
 	</script>
 {% endif %}
 
-<script src="http://code.jquery.com/jquery.min.js"></script>
+
 <script>
-	$(function()
-	{
-		$('.navigation-trigger').on('click', function(e)
-		{
-			$('.navigation-wrapper').slideToggle(200);
-			e.preventDefault();
-		})
-	});
+
+	{% if site.url == site.live_url %}
+		Modernizr.load('/static/js/scripts.{% version %}.js');	
+	{% else %}
+		Modernizr.load('/static/js/scripts.js');	
+	{% endif %}
 </script>
 
 </body>

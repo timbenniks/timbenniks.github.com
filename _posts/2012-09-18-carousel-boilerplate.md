@@ -7,7 +7,7 @@ kind: blog
 permalink: /blog/carousel-boilerplate
 nav_url: /blog/
 published: true
-change_frequency: monthly
+change_frequency: weekly
 metadata:
 - role: by
   name: Tim Benniks

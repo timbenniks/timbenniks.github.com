@@ -7,7 +7,7 @@ kind: fitness
 permalink: /fitness-journal/about-this-journal
 nav_url: /fitness-journal/
 published: true
-change_frequency: monthly
+change_frequency: weekly
 metadata:
 - role: by
   name: Tim Benniks
