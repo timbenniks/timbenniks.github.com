@@ -44,11 +44,11 @@ body {
 a {
 	color: #9C0001;
 	text-decoration: underline;
-	
+
 	&:hover	{
 		color: darken(#9C0001, 5%);
 	}
-	
+
 	&:focus {
 		outline: 1px dotted #9C0001;
 	}
@@ -58,7 +58,7 @@ p {
 	font-size: 1.6em;
 	line-height: 25px;
 	margin: 0 0 25px 0;
-	
+
 	&.chapeau {
 		margin: 0;
 		line-height: 1;
@@ -102,7 +102,7 @@ blockquote {
 	margin: 0px 0 25px 0px;
 	border-left: 5px solid #CCC;
 	padding: 0 0 0 8px;
- 
+
     p {
     	font-size: 1em;
     }
@@ -188,7 +188,7 @@ nav {
 			background: #9C0001;
 			color: #fff;
 		}
-		
+
 		&:focus {
 			outline: 0;
 			background: darken(#9C0001, 10%);
@@ -211,7 +211,7 @@ nav {
 	margin: 0 auto;
 	padding: 0 2em;
 	width: auto;
-	
+
 	header {
 		margin: 0 0 2em;
 		border-bottom: 1px dotted #ddd;
@@ -223,74 +223,74 @@ nav {
 			height: 37px;
 		}
 	}
-	
+
 	ul {
 		margin: 0 0 25px 17px;
 		list-style: outside circle;
-		
+
 		li {
 			font-size: 1.6em;
-			
+
 			ul {
 				margin: 0 0 0 17px;
 			}
-			
+
 			p, li {
 				font-size: 1em;
 				margin: 0;
 			}
 		}
 	}
-	
+
 	nav {
 		margin: 0 0 2em 0;
 	}
-	
+
 	aside {
 		&.readability {
 			margin: 0 0 15px 0;
 		}
-		
+
 		&.intro p {
 			margin: 0;
 			font-size: 2em;
 			color: #9C0001;
 			line-height: 25px;
-			
+
 			a {
 				font-style: italic;
 			}
 		}
-		
+
 		&.metadata {
 			margin: 0 0 25px 0;
-			
+
 			p {
 				font-size: 1.4em;
 				margin: 0;
 			}
-			
+
 			a {
 				color: #333;
 			}
 		}
-		
+
 		&.only-sidenote {
 			margin: 0 0 25px 0;
 		}
 	}
-	
+
 	.pager {
 		margin: 0 0 50px 0;
 		overflow: hidden;
-		
+
 		a {
 			display: block;
-			
+
 			&.previous {
 				float: left;
 			}
-			
+
 			&.next {
 				float: right;
 			}
@@ -303,33 +303,33 @@ nav {
 	border-top: 1px dotted #ddd;
 	padding: 25px 0 0 0;
 	margin: 50px 0 0 0;
-	
-	.list-item {	
+
+	.list-item {
 		overflow: hidden;
 		margin: 0 0 25px 0;
 		padding: 0 25px 24px 25px;
-		border-bottom: 1px dotted #ddd;		
-		
+		border-bottom: 1px dotted #ddd;
+
 		header {
 			border: none;
 			margin: 0;
-			padding: 0;	
-			
+			padding: 0;
+
 			h1 {
 				font-size: 2.5em;
 				margin: 0 0 10px 0;
-				
+
 				a {
 					color: #333;
 					text-decoration: none;
-					
+
 					&:hover {
 						color: #111;
 					}
 				}
 			}
 		}
-		
+
 		aside.intro p {
 			font-size: 1.6em;
 		}
@@ -337,8 +337,8 @@ nav {
 }
 
 .home-page {
-		
-	.content {	
+
+	.content {
 		h1, h2, article, nav, p {
 			text-align: center;
 		}
@@ -346,7 +346,7 @@ nav {
 		header {
 			border: 0;
 		}
-		
+
 		nav {
 			display: none;
 		}
@@ -358,23 +358,23 @@ nav {
 		margin: 0 0 25px 0;
 		padding: 0;
 		border: none;
-		
+
 		h1 {
 			text-align: center;
 		}
 	}
-	
+
 	.list {
 		margin: 0;
 		border: none;
 		padding: 0;
 		background: none;
-		
+
 		.work-item {
 			display: block;
 			width: 270px;
 			margin: 0 auto 10px;
-			
+
 			img {
 				width: 100%;
 				height: auto;
@@ -387,7 +387,7 @@ nav {
 	}
 }
 
-.fitness {	
+.fitness {
 	h1, h2 {
 		text-align: center;
 	}
@@ -395,7 +395,7 @@ nav {
 	img {
 		margin: 0 auto;
 	}
-	
+
 	.list {
 		h1, p {
 			text-align: center;
@@ -439,131 +439,131 @@ nav {
 {
 	.content {
 		max-width: 740px;
-		
+
 		aside {
 			float: left;
 			clear: left;
 			width: 200px;
 			padding: 0 20px 0 0;
 		}
-		
+
 		article {
 			margin: 0 0 0 220px;
 		}
 	}
-	
+
 	.list {
-		.list-item {	
+		.list-item {
 			overflow: hidden;
-			
+
 			header {
 				h1 {
 					font-size: 3em;
 				}
 			}
-			
-			
+
+
 			aside {
 				width: 100%;
-				
+
 				p {
 					font-size: 1.6em;
 					line-height: 1;
 				}
 			}
-		}	
+		}
 	}
-	
+
 	.home-page {
-		
+
 		.content {
-			
+
 			header {
 				margin: 25% 0 0 0;
 			}
-	
+
 			nav {
 				border-top: 1px dotted #ddd;
 				display: block;
 			}
 		}
-		
+
 		nav {
 			display: none;
 		}
 	}
-	
+
 	h1 {
 		font-size: 5em;
 	}
-	
+
 	figure {
 	    margin: 0 0 25px 0;
 	    overflow: hidden;
-	    
+
 	    img {
 	    	margin: 0;
 	    }
 	}
-	
+
 	.work {
 		header {
 			margin: 0 0 25px 0;
 			padding: 0;
 			border: none;
-			
+
 			h1 {
 				text-align: center;
 			}
 		}
-		
+
 		aside {
 			display: block;
 			width: 100%;
 			float: none;
-			
+
 			p {
 				text-align: center;
 			}
-			
+
 			&.intro {
 				margin: 0 0 25px 0;
 			}
-			
+
 			&.visit nav {
 				text-align: center;
 			}
 		}
-		
+
 		article {
 			float: none;
 			margin: 0;
-			
+
 			figure img {
 				max-width: 727px;
 				width: 100%;
 				height: auto;
 			}
 		}
-		
+
 		.list {
 			background: #F8F8F8;
 			border-top: 1px dotted #ddd;
 			padding: 25px 0 0 0;
 			margin: 50px 0 0 0;
 			text-align: center;
-	
+
 			.work-item {
 				display: inline-block;
 				width: 320px;
 				margin: 0 20px 10px 0;
-				
+
 				a {
 					display: block;
 					overflow: hidden;
 					width: 332px;
 				}
-				
+
 				img {
 					width: auto;
 					height: auto;
@@ -575,8 +575,8 @@ nav {
 			}
 		}
 	}
-	
-	.highlight { 
+
+	.highlight {
 		width: 100%;
 	}
 }
@@ -590,30 +590,30 @@ nav {
 			font-size: 1.2em;
 		}
 	}
-	
+
 	.content {
 		max-width: 740px;
-		
+
 		aside {
 			float: left;
 			clear: left;
 			width: 200px;
 			padding: 0 20px 0 0;
 		}
-		
+
 		article {
 			margin: 0 0 0 220px;
 		}
 	}
-	
+
 	h1 {
 		font-size: 5em;
 	}
-	
+
 	figure {
 	    margin: 0 0 25px 0;
 	    overflow: hidden;
-	    
+
 	    img {
 	    	margin: 0;
 	    }
