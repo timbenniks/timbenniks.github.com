@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fitness goals
-description: Poor goals lead to failure. They need to be specific, measurable, time bounded and realistic.
+description: These goals should be specific, measurable, time bounded and realistic.
 keywords: fitness, goals
 kind: fitness
 permalink: /fitness-journal/fitness-goals
