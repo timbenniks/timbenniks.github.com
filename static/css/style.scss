@@ -5,30 +5,6 @@ layout: nill
 @import "_highlighting";
 @import "_normalize";
 
-@font-face {
-    font-family: 'BellMTItalic';
-	src: local('Bell MT');
-    src: url('../fonts/bellmtstd-italic.eot');
-    src: url('../fonts/bellmtstd-italic.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/bellmtstd-italic.woff') format('woff'),
-         url('../fonts/bellmtstd-italic.ttf') format('truetype'),
-         url('../fonts/bellmtstd-italic.svg#bellmtstd-italic') format('svg');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'BellMT';
-    src: local('Bell MT');
-	src: url('../fonts/bellmtstd-regular.eot');
-    src: url('../fonts/bellmtstd-regular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/bellmtstd-regular.woff') format('woff'),
-         url('../fonts/bellmtstd-regular.ttf') format('truetype'),
-         url('../fonts/bellmtstd-regular.svg#bellmtstd-regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 html {
   	-webkit-tap-highlight-color: #9C0001;
   	-webkit-text-size-adjust: 100%;
@@ -36,7 +12,7 @@ html {
 }
 
 body {
-	font: 62.5%/1.5 'Bell MT', BellMT, Georgia, serif;
+	font: 62.5%/1.5 Georgia, serif;
 	color: #333;
 	background: url(../gfx/bg.jpg) repeat;
 }
@@ -58,7 +34,6 @@ p {
 	font-size: 1.4em;
 	line-height: 25px;
 	margin: 0 0 25px 0;
-	font-family: Georgia, serif;
 
 	&.chapeau {
 		margin: 0;
@@ -73,8 +48,7 @@ p {
 h1 {
 	font-size: 3em;
 	line-height: 1.1;
-	font-family: 'Bell MT', BellMT, Georgia, serif;
-	font-style: italic;
+	font-style: normal;
 
 	&.center {
 		text-align: center;
@@ -85,7 +59,6 @@ h2 {
 	font-size: 2em;
 	line-height: 1.5;
 	color: #9C0001;
-	font-family: 'Bell MT', BellMT, Georgia, serif;
 	font-style: italic;
 }
 
@@ -94,7 +67,6 @@ h3 {
 	line-height: 1.5;
 	color: #000;
 	font-weight: bold;
-	font-family: 'Bell MT', BellMT, Georgia, serif;
 }
 
 blockquote {
@@ -106,7 +78,6 @@ blockquote {
 
     p {
     	font-size: 1em;
-		font-family: 'Bell MT', BellMT, Georgia, serif;
     }
 }
 
@@ -126,7 +97,6 @@ figure {
 		margin: .5em 0 0 0;
 		font-size: 1em;
 		color: #777;
-		font-family: arial, sans-serif;
 	}
 }
 
@@ -141,7 +111,7 @@ nav {
 	h1 {
 		background: #9C0001;
 		display: block;
-		font-size: 12px;
+		font-size: 11px;
 		letter-spacing: 0.1em;
 		text-align: left;
 		color: #fff;
@@ -149,7 +119,6 @@ nav {
 		padding: 0 1em;
 		line-height: 3;
 		font-style: normal;
-		font-family: 'Bell MT', BellMT;
 		height: 36px;
 
 		a {
@@ -160,7 +129,7 @@ nav {
 			margin: 0;
 			line-height: 36px;
 			float: left;
-			font-size: 12px;
+			font-size: 11px;
 			text-align: left;
 
 			&:hover {
@@ -175,7 +144,7 @@ nav {
 
    	a {
 		display: block;
-		font-size: 12px;
+		font-size: 11px;
 		line-height: 36px;
 	    letter-spacing: 0.1em;
 		text-align: center;
@@ -256,7 +225,6 @@ nav {
 		&.intro p {
 			margin: 0;
 			font-size: 1.6em;
-			font-family: 'Bell MT', BellMT, Georgia, serif;
 			color: #9C0001;
 			line-height: 25px;
 
@@ -497,7 +465,7 @@ nav {
 	}
 
 	h1 {
-		font-size: 5em;
+		font-size: 4em;
 	}
 
 	figure {
@@ -610,7 +578,7 @@ nav {
 	}
 
 	h1 {
-		font-size: 5em;
+		font-size: 4em;
 	}
 
 	figure {
