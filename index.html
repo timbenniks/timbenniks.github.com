@@ -16,9 +16,7 @@ priority: 1.0
 
 <nav role="navigation">
 {% for p in site.navigation %}
-	{% if p.text != 'home' %}
-		<a  href="{{ p.url }}" title="{{ p.text }}">{{ p.text }}</a>
-	{% endif %}
+	<a  href="{{ p.url }}" title="{{ p.text }}">{{ p.text }}</a>
 {% endfor %}
 </nav>
 

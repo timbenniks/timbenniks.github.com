@@ -104,9 +104,10 @@ nav {
 	width: 100%;
 	border-bottom: 1px dotted #ddd;
 	background: #f8f8f8;
-	margin: 0 0 4em 0;
 	text-align: center;
 	overflow: hidden;
+	position: fixed;
+	box-shadow: 0 0 18px 2px #F3F3F3;
 
 	h1 {
 		background: #9C0001;
@@ -140,6 +141,7 @@ nav {
 
 	.navigation-wrapper {
 		display: none;
+		position: static;
 	}
 
    	a {
@@ -179,8 +181,8 @@ nav {
 }
 
 .content {
-	margin: 0 auto;
-	padding: 0 2em;
+	margin: auto;
+	padding: 8em 2em 0;
 	width: auto;
 
 	header {
@@ -335,6 +337,11 @@ nav {
 		}
 	}
 
+	.work-cta {
+		position: static;
+		box-shadow: none;
+	}
+
 	.list {
 		margin: 0;
 		border: none;
@@ -408,6 +415,16 @@ nav {
 
 @media only screen and (min-width: 768px)
 {
+	nav {
+
+		.navigation-wrapper {
+			display: block;
+			max-width: 740px;
+			width: auto;
+			margin: 0 auto;
+		}
+	}
+
 	.content {
 		max-width: 740px;
 
@@ -456,6 +473,8 @@ nav {
 			nav {
 				border-top: 1px dotted #ddd;
 				display: block;
+				position: static;
+				box-shadow: none;
 			}
 		}
 
