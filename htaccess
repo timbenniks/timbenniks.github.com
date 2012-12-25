@@ -68,15 +68,5 @@ permalink: .htaccess
   rewriterule ^project/590/fantastic-man(.*)$ http://timbenniks.nl/work$1 [r=301,nc]
   rewriterule ^project/808/picnic-network(.*)$ http://timbenniks.nl/work$1 [r=301,nc]
 
-  rewriterule ^about-tim-benniks$ http://timbenniks.nl/about$1 [r=301,nc] 
-
-  rewriterule ^id/(.*)$ http://timbenniks.nl [r=301,nc]  
-  rewriterule ^tag/(.*)$ http://timbenniks.nl [r=301,nc]
-  rewriterule ^page/(.*)$ http://timbenniks.nl [r=301,nc]
-  rewriterule ^archive/(.*)$ http://timbenniks.nl [r=301,nc]
-  rewriterule ^designer/(.*)$ http://timbenniks.nl [r=301,nc]
-  rewriterule ^client/(.*)$ http://timbenniks.nl [r=301,nc]
-  rewriterule ^archives/(.*)$ http://timbenniks.nl [r=301,nc]
-  rewriterule ^sandbox/(.*)$ http://timbenniks.nl [r=301,nc]
-  
+  rewriterule ^about-tim-benniks$ http://timbenniks.nl/about$1 [r=301,nc]
 </IfModule>
