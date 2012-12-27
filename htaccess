@@ -13,11 +13,22 @@ permalink: .htaccess
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule ^(.+)\.(\d+)\.(js|css)$ static.php?file=$1&ext=$3 [L]
+  RewriteRule ^(.+)\.(html)$ static.php?file=$1&ext=$2 [L]
+
+  <FilesMatch "\.(jpg|jpeg|png|gif)$">
+    ExpiresActive on
+    ExpiresDefault "access plus 1 year"
+  </FilesMatch>
+
+  <FilesMatch "\.(jpg|jpeg|png|gif|js|css)$">
+    Header unset ETag
+    FileETag None
+  </FilesMatch>
 
   ErrorDocument 404 /404/index.html
-  
+
   rewriterule ^feed/(.*)$ http://timbenniks.nl/feed.xml [r=301,nc]
-  
+
   rewriterule ^blog/1700/a-mobile-development-strategy(.*)$ http://timbenniks.nl/blog$1 [r=301,nc]
   rewriterule ^blog/1421/my-new-fluffy-css3-layout(.*)$ http://timbenniks.nl/blog$1 [r=301,nc]
   rewriterule ^blog/954/about-jquery-and-performance(.*)$ http://timbenniks.nl/blog$1 [r=301,nc]
@@ -46,7 +57,7 @@ permalink: .htaccess
   rewriterule ^blog/568/how-to-effectively-communicate-with-developers(.*)$ http://timbenniks.nl/blog$1 [r=301,nc]
   rewriterule ^blog/669/timbenniks-nl-featured-at-1webdesigner-com(.*)$ http://timbenniks.nl/blog$1 [r=301,nc]
   rewriterule ^blog/669/timbenniks-nl-featured-at-1webdesigner-com(.*)$ http://timbenniks.nl/blog$1 [r=301,nc]
-  
+
   rewriterule ^projects(.*)$ http://timbenniks.nl/work$1 [r=301,nc]
   rewriterule ^project/603/mediafonds(.*)$ http://timbenniks.nl/work/mediafonds$1 [r=301,nc]
   rewriterule ^project/1267/stadgenoot(.*)$ http://timbenniks.nl/work/stadgenoot$1 [r=301,nc]

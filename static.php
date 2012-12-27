@@ -13,21 +13,25 @@ if($ext == 'css')
 {
 	header('Content-type: text/css; charset=utf-8');
 }
-else
+elseif($ext == 'js')
 {
 	header('Content-type: application/x-javascript; charset=utf-8');
+}
+else
+{
+	header('Content-type: text/html; charset=utf-8');
 }
 
 function make_gzip($source)
 {
 	if(!headers_sent() && extension_loaded("zlib") && strstr($_SERVER["HTTP_ACCEPT_ENCODING"],"gzip"))
-	{			
+	{
 		$source = gzencode($source, 9);
-			
+
 		header("Content-Encoding: gzip");
 		header("Vary: Accept-Encoding");
 		header("Content-Length: ".strlen($source));
-		
+
 		return $source;
 	}
 }
