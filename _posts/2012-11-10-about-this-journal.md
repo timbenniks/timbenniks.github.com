@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About this journal
-description: Yet another blog about fitness?
+description: This journal is a document full of valuable data to learn from in the future.
 keywords: fitness, progress, health, turning point
 kind: fitness
 permalink: /fitness-journal/about-this-journal
@@ -15,7 +15,6 @@ metadata:
 
 >I can already hear my friends think: "Why the hell create a journal about fitness?
 >Haven't we seen enough of this guy's stuff on Facebook and Instagram yet?"
-
 
 Well, I don't care I do it for <em>me</em>.
 I do it to create a document full of valuable data to learn from in the future.

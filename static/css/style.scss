@@ -389,6 +389,50 @@ nav {
 	display: none;
 }
 
+table {
+    font-size: 12px;
+    margin: 0 0 20px 0;
+    border: 1px solid #ddd;
+    font-family: arial, sans-serif;
+    width: 100%;
+}
+
+table th {
+    text-align: left;
+    padding: 3px 8px;
+}
+
+table td {
+    text-align: right;
+    padding: 3px 8px;
+}
+
+table td.meal,
+table td.time {
+    text-align: left;
+}
+
+table thead th {
+    border-bottom: 1px solid #ddd;
+}
+
+table .totals th {
+    text-align: left;
+}
+
+table .totals th,
+table .totals td {
+    border-top: 1px solid #ddd;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+table tr:nth-child(odd) {
+    background: #fff;
+}
 
 @media only screen and (min-width: 550px)
 {
