@@ -1,20 +1,20 @@
 </section>
-{% if site.url == site.live_url %}	
-	<script>
-		var _gaq=[['_setAccount','UA-6797812-3'],['_trackPageview']];
-		Modernizr.load('//www.google-analytics.com/ga.js');
-	</script>
-{% endif %}
-
-
 <script>
-
 	{% if site.url == site.live_url %}
 		Modernizr.load('/static/js/scripts.{% version %}.js');	
 	{% else %}
 		Modernizr.load('/static/js/scripts.js');	
 	{% endif %}
-</script>
 
+	{% if site.url == site.live_url %}	
+		var _gaq=[['_setAccount','UA-6797812-3'],['_trackPageview']];
+		(function()
+		{
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	{% endif %}
+</script>
 </body>
 </html>
