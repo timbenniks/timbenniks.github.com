@@ -26,18 +26,9 @@
 	<meta property="og:site_name" content="Tim Benniks, web-developer" />
 	<meta property="og:description" content="{{ page.description }}" />
 
-	{% if site.url == site.live_url %}	
-		<link href="/static/css/style.{% version %}.css" rel="stylesheet" />
-	{% else %}
-		<link href="/static/css/style.css" rel="stylesheet" />
-	{% endif %}
+	<link href="/static/css/style.css?v={% version %}" rel="stylesheet" />
+	<script src="/static/js/modernizr.js?v={% version %}"></script>
 	
-	{% if site.url == site.live_url %}
-		<script src="/static/js/modernizr.{% version %}.js"></script>
-	{% else %}
-		<script src="/static/js/modernizr.js"></script>
-	{% endif %}
-
 </head>
 <body class="{{ page.classname }}">
 

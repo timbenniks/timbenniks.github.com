@@ -25,6 +25,18 @@ maruku:
   png_dir:    images/latex
   png_url:    /images/latex
 
+environments:
+  stage:
+    url: http://test.timbenniks.nl
+    remote:
+      connection: fbenniks@florisbenniks.nl
+      path: /usr/share/nginx/www/test.timbenniks.nl
+  production:
+    url: http://timbenniks.nl
+    remote:
+      connection: fbenniks@florisbenniks.nl
+      path: /usr/share/nginx/www/timbenniks.nl
+
 navigation:
 - text: home
   url: /

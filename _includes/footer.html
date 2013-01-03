@@ -1,11 +1,7 @@
 </section>
 <script>
-	{% if site.url == site.live_url %}
-		Modernizr.load('/static/js/scripts.{% version %}.js');	
-	{% else %}
-		Modernizr.load('/static/js/scripts.js');	
-	{% endif %}
-
+	Modernizr.load('/static/js/scripts.js?v={% version %}');	
+	
 	{% if site.url == site.live_url %}	
 		var _gaq=[['_setAccount','UA-6797812-3'],['_trackPageview']];
 		(function()
