@@ -10,6 +10,7 @@ live_url: 		http://timbenniks.nl
 source:      	.
 destination: 	./_site
 plugins:     	./_plugins
+exclude:      ['Rakefile', 'README']
 
 future:      	true
 lsi:         	false
